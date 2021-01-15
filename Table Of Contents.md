@@ -27,7 +27,7 @@
   - Resources:
 <br><br>
 
-[**Basic Operators**](https://github.com/pekkalacd/Introduction-to-Python)<br>
+[**Basic Operators**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Basic%20Operators)<br>
   Steps of assignment operator. basic arithmetic, logical, and comparison operators.<br>
   - Resources:
 <br><br>
