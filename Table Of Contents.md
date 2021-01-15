@@ -44,7 +44,7 @@
   - Resources:
 <br><br>
 
-**If/elif/else**<br>
+**If, elif, and else**<br>
   Description: differences between if, elif, else statements. Nested if-statements. Ternary statements.<br>
   - Lesson:
   - Resources:
@@ -93,7 +93,7 @@ Description: Require Parameters. Optional Parameters. Tying programs together wi
   - Resources:
 <br><br>
 
-**File I/O**<br>
+**Working with Files**<br>
 Description: Working with files in Python (.txt & .csv). open & close. read & write. create & delete. Parsing files. Functions with files.<br>
   - Lesson:
   - Resources:
@@ -159,7 +159,7 @@ Description: {more research}
   - Resources:
 <br><br>
 
-**Packages / Libraries / Modules**<br>
+**Packages, Libraries, and Modules**<br>
 Description: Hierarchy of each. How does Python distinguish between each? Namespaces. Import statements. Pip. Python Package Index (pyPI).<br>
   - Lesson:
   - Resources:
@@ -192,7 +192,7 @@ Data Structures and Time & Space Complexity.<br>
   - Resources:
 <br><br>
 
-**Dictionaries / Maps / Hash Tables**<br>
+**Dictionaries, Maps, and Hash Tables**<br>
 Description: What are their differences? dict keyword. Collections library. Ordered dictionaries. Default dictionaries.<br>
 Chain Maps.<br>
   - Lesson:
