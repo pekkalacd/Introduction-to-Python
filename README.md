@@ -67,9 +67,10 @@ This is a folder containing the example code for the corresponding lesson. Each 
 
 **EXERCISES**<br>
 This is a folder containing one file, a jupyter notebook containing exercise questions to practice what you learn in the lesson. Each Lesson folder within the parent folder Lessons, will have it's own "Exercises" folder. 
-
 <br><br>
+### Get Started: [Table of Contents](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Table%20Of%20Contents.md)
 
+<br><br><br>
 
 ## Contributing
 
