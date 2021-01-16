@@ -4,7 +4,12 @@
 
 [**Basic Overview**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Basic%20Overview)<br>
   A basic introduction to computers and what python is. Installation. History of Python.<br>
-  - Resources:
+  - Resources: 
+      - [What is a computer?](https://en.wikipedia.org/wiki/Computer)<br>
+      - [History of Python](https://en.wikipedia.org/wiki/Guido_van_Rossum)<br>
+      - [ABC Programming](https://en.wikipedia.org/wiki/ABC_(programming_language))<br>
+      - [Python Use Past 3 Years Github](https://insights.dice.com/2020/12/03/10-most-popular-programming-languages-on-github/)<br>
+      - [Python Packages Amounts](https://pypi.org/)<br>
 <br><br>
 
 [**Interpreter vs Compiler**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Interpreter%20vs%20Compiler)<br>
