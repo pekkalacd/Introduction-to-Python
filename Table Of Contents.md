@@ -2,7 +2,7 @@
 
 <br>
 
-[**Basic Overview**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Basic%20Overview)<br>
+[**Basic Overview**](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Basic%20Overview/Basic%20Overview.ipynb)<br>
   A basic introduction to computers and what python is. Installation. History of Python.<br>
   - Resources: 
       - [What is a computer?](https://en.wikipedia.org/wiki/Computer)<br>
