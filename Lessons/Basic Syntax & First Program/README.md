@@ -38,3 +38,26 @@ print('hello', "world", 'i am ', 10, 'years old')
 
 # output => hello worlld i am 10 years old
 ```
+
+## First Program
+* Python is a scripting language. This means that Python codes could be executed in Python shell without **main** function/class as in C++/Java 
+```
+print("hello world") # output => hello world
+```
+* Or execution with **main.py** Python file
+** main.py
+```
+def main():
+	"""
+	print('hello world')
+
+if __name__ == '__main__':
+	main()
+
+```
+** execute in shell
+```
+>> python3 main.py
+
+# output => hellow world
+```
