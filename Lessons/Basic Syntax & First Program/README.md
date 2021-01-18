@@ -44,8 +44,8 @@ print('hello', "world", 'i am ', 10, 'years old')
 ```
 print("hello world") # output => hello world
 ```
-* Or execution with **main.py** Python file
- * main.py
+- Or execution with **main.py** Python file
+	- main.py
 ```
 def main():
 	"""
@@ -55,7 +55,7 @@ if __name__ == '__main__':
 	main()
 
 ```
- * execute in shell
+	- execute in shell
 ```
 >> python3 main.py
 
