@@ -36,7 +36,7 @@ This directory will be used to store a **clone** or copy of this repository on y
 
 Then you'll want to change directories into the repository:<br><br>
 
-                                 cd "Introduction to Python"
+                                 cd Introduction-to-Python
 
 <br><br><br>
 
