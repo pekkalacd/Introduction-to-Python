@@ -45,19 +45,19 @@ print('hello', "world", 'i am ', 10, 'years old')
 print("hello world") # output => hello world
 ```
 - Or execution with **main.py** Python file
-	- main.py
-```
-def main():
-	print('hello world')
+	- define **main.py**
+	```
+	def main():
+		print('hello world')
 
-if __name__ == '__main__':
-	main()
+	if __name__ == '__main__':
+		main()
 
-```
+	```
 
 	- execute in shell
-```
->> python3 main.py
+	```
+	>> python3 main.py
 
-# output => hellow world
-```
+	# output => hellow world
+	```
