@@ -74,8 +74,21 @@ This is a folder containing one file, a jupyter notebook containing exercise que
 
 ## Contributing
 
-This is an open source project. Anyone who feels like they have something to add that aligns with the goals of this project is welcome to. 
-{More research on what steps need to be taken to contribute}. 
+This is an open source project. Anyone who feels like they have something to add that aligns with the goals of this project is welcome to. <br>
+
+In order to contribute, follow 6 easy steps:
+
+1. Fork the repository
+2. Clone the repository
+3. Create a branch
+4. Make and commit changes to clone
+5. Push branch to forked repo and **Compare & Pull Request**
+6. Enter relevant title, comments, and **Create Pull Request**
+<br>
+
+A collaborator will assist in committing those changes to the existing content.<br><br>
+
+See [**How to Contribute**](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Contributing.md) for more information. 
 
 
 
