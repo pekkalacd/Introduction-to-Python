@@ -52,7 +52,6 @@ print("hello world") # output => hello world
 
 	if __name__ == '__main__':
 		main()
-
 	```
 
 	- execute in shell
