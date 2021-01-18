@@ -48,13 +48,13 @@ print("hello world") # output => hello world
 	- main.py
 ```
 def main():
-	"""
 	print('hello world')
 
 if __name__ == '__main__':
 	main()
 
 ```
+
 	- execute in shell
 ```
 >> python3 main.py
