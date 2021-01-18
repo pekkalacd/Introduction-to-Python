@@ -29,7 +29,7 @@ print("hello 2")
 ### 'print' function
 * 'print' function is to print output to screen and move cursor in screne to the next line
 *  output is **a mix of string/integer/float** because Python implicitly converts all inputs to string in 'print' functiono
-"""
+```
 print("Hello world") # print hello world to screen
 ```
 * List of comma-separated strings will be concatenated with space in between by 'print'
