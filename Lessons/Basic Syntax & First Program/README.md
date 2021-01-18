@@ -16,7 +16,7 @@ Date: 07/04/1776
 print("hello world") # inline-comment always goes after statements or goes byself in a line
 ```
 
-### string
+### String
 * Wrapped either in _a single-quote pair_ **'string'** or _a double-quote pair_ **"string"**
 ```
 print('hello 1')
