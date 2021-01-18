@@ -22,8 +22,8 @@ print("hello world") # inline-comment always goes after statements or goes bysel
 print('hello 1')
 print("hello 2")
 
-# output => hello
-# output => world
+# output >> hello
+# output >> world
 ``` 
 
 ### 'print' function
@@ -36,7 +36,7 @@ print("Hello world") # print hello world to screen
 ```
 print('hello', "world", 'i am ', 10, 'years old')
 
-# output => hello worlld i am 10 years old
+# output >> hello worlld i am 10 years old
 ```
 
 ## First Program
