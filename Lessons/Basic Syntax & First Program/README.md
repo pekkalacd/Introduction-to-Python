@@ -22,8 +22,8 @@ print("hello world") # inline-comment always goes after statements or goes bysel
 print('hello 1')
 print("hello 2")
 
-# output => hello
-# output => world
+# output >> hello
+# output >> world
 ``` 
 
 ### 'print' function
@@ -36,5 +36,27 @@ print("Hello world") # print hello world to screen
 ```
 print('hello', "world", 'i am ', 10, 'years old')
 
-# output => hello worlld i am 10 years old
+# output >> hello worlld i am 10 years old
 ```
+
+## First Program
+* Python is a scripting language. This means that Python codes could be executed in Python shell without **main** function/class as in C++/Java 
+```
+print("hello world") # output => hello world
+```
+- Or execution with **main.py** Python file
+	- define **main.py**
+	```
+	def main():
+		print('hello world')
+
+	if __name__ == '__main__':
+		main()
+	```
+
+	- execute in shell
+	```
+	>> python3 main.py
+
+	# output => hellow world
+	```
