@@ -13,7 +13,7 @@ Date: 07/04/1776
 * In-line comment starts with **#**
 ```
 # My first inline-comment
-print("hello world") # inline-comment always goes after statements or goes byself in a line
+print("hello world") # inline-comment always goes after statements or goes by itself in a line
 ```
 
 ### String
@@ -22,21 +22,21 @@ print("hello world") # inline-comment always goes after statements or goes bysel
 print('hello 1')
 print("hello 2")
 
-# output >> hello
-# output >> world
+# output => hello 1
+# output => hello 2
 ``` 
 
-### 'print' function
-* 'print' function is to print output to screen and move cursor in screne to the next line
-*  output is **a mix of string/integer/float** because Python implicitly converts all inputs to string in 'print' functiono
+### print function
+* 'print' is a function that is used to print output to the screen.
+*  output is **a mix of string/integer/float** because Python implicitly converts all inputs to string inside the 'print' function
 ```
 print("Hello world") # print hello world to screen
 ```
-* List of comma-separated strings will be concatenated with space in between by 'print'
+* List of comma-separated strings will be concatenated into a space-separated string. 
 ```
 print('hello', "world", 'i am ', 10, 'years old')
 
-# output >> hello worlld i am 10 years old
+# output >> hello world i am 10 years old
 ```
 
 ## First Program
@@ -58,5 +58,5 @@ print("hello world") # output => hello world
 	```
 	>> python3 main.py
 
-	# output => hellow world
+	# output => hello world
 	```
