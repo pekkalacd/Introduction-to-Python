@@ -139,7 +139,7 @@ This is Python's built-in package manager. If you'd like to use a different one,
 
 <br>
 
-### For more information on Python installation click [here](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Basic%20Overview/EXAMPLES.md)
+### For more information on installing Python click [here](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Basic%20Overview/EXAMPLES.md)
 
 
 
