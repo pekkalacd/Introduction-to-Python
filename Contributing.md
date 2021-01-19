@@ -1,7 +1,7 @@
 # How to Contribute<br><br>
 
 ### 1. Fork the Repository<br>
-When you fork this repository, a *copy* of this repository will show up on your github account. Changes made to that copy are not persistent to the this repository.
+When you fork this repository, a *copy* of this repository will show up on your github account. Changes made to that copy are not persistent to this repository.
 Additional actions need to be taken by collaborators in order to make changes to the existing content.<br>
 
 To fork this repository, in the upper right-hand corner of the screen there should be a button labeled **Fork**, click that.<br>
