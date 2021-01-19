@@ -28,7 +28,7 @@ The format of this repository is broken up into many lessons.
           |____ Lessons
                    |_____ Lesson 1 (Folder) 
                    |             |
-                   |             |___ OVERVIEW.md
+                   |             |___ README.md
                    |             |
                    |             |___ EXAMPLES.md 
                    |             |
@@ -54,8 +54,13 @@ This is noted as "Lesson 1 (Folder)" above. This is a sub-folder, within the "Le
 
 <br>
 
+**README.md**<br>
+This is a markdown file containing the overview for each lesson corresponding to the lesson sub-folder.
+
+<br>
+
 **EXAMPLES.md**<br>
-This is a markdown file containing example uses of the material covered in the OVERVIEW.md for each lesson. 
+This is a markdown file containing example uses of the material covered in the README.md for each lesson. 
 
 <br>
 
