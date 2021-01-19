@@ -80,7 +80,7 @@ While a compiler will require that an entire program, free of compile-time error
 
 2. **Static vs Dynamic Typing**<br>
 Languages like C and C++ are *statically typed* languages. This means that once a data-type is declared for a particular object, that object cannot change the type of data it stores at-will. The object must be casted
-to the corresponding data type of the data it'd like to store, before it can store the new data. Unlike those languages, Python is a *dynamically typed* language. This means that objects data types automatically change to
+to a new data type before it can store data of a different type. Unlike those languages, Python is a *dynamically typed* language. This means that object's data types automatically change to
 reflect the type of data that it stores. 
 
 3. **Weak vs Strong typing**<br>
