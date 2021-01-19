@@ -10,6 +10,8 @@
       - [ABC Programming](https://en.wikipedia.org/wiki/ABC_(programming_language))<br>
       - [Python Use Past 3 Years Github](https://insights.dice.com/2020/12/03/10-most-popular-programming-languages-on-github/)<br>
       - [Python Packages Amounts](https://pypi.org/)<br>
+      - [How does Python work?](https://towardsdatascience.com/how-does-python-work-6f21fd197888)
+      - [Static vs Dynamic Typing](https://android.jlelse.eu/magic-lies-here-statically-typed-vs-dynamically-typed-languages-d151c7f95e2b)
 <br><br>
 
 [**Interpreter vs Compiler**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Interpreter%20vs%20Compiler)<br>
