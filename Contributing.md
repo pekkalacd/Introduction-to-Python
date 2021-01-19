@@ -44,7 +44,7 @@ Then you'll want to change directories into the repository:<br><br>
 
 Once the repository has been cloned on your machine, you'll want to create a **branch**. You can do so by typing the following command on your bash:<br><br>
 
-                                git checkout -b <branch_name>
+                                git checkout -b someBranch
                                 
 <br><br>
 
@@ -72,7 +72,7 @@ Running this command will add the newly modified files onto the branch. You can 
 
 Finally, you can then run the following command to *commit* the changes.<br>
 
-                               git commit -m "fixing some thing"
+                               git commit -m "Capitalized the letters"
                                
 <br>
 
@@ -85,7 +85,7 @@ The -m flag denotes a message, followed by string containing the message.
 Now that the changes have been made, you'll want to **push** this branch back to the forked repository on github (available at your Overview). You can do this by running the
 following command:<br><br>
 
-                              git push origin <branch_name>
+                              git push origin someBranch
                               
 <br>
 
