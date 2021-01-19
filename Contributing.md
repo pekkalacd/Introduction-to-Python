@@ -18,7 +18,7 @@ Doing so will send a copy of the repository to your **overview page**.
 
 ### 2. Clone the Repository<br>
 
-On your overview page, inside of your forked copy of this repository, navigate to a link called **Code**, click it.
+On your overview page, inside of your forked copy of this repository, navigate to a green button called **Code**, click it.
 
 <br>
 <p align="center"><img src = "https://user-images.githubusercontent.com/34849400/104873207-98f04300-5915-11eb-99c9-43f15a458568.png"/></p>
