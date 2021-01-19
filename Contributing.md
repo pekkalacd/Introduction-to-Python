@@ -98,7 +98,7 @@ Once that command has been completed, refresh the link at the forked repository,
 ### 6. Pull Request<br>
 
 You'll want to click on **Compare & Pull Request**. This will populate the changes being proposed by the branch you just pushed to the original repository that your forked from.<br>
-<br>Here you will additionally enter a title for the changes you've made and provide a brief description for what those changes were, then you'll hit **Create Pull Request**.
+<br>Here you will additionally enter a title for the changes you've made, your commit message is the default, and provide a brief description for what those changes were, then you'll hit **Create Pull Request**.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/34849400/104877729-1456f200-5920-11eb-9b2e-b09642053963.png"/></p>
 
