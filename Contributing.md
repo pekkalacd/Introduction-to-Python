@@ -1,7 +1,7 @@
 # How to Contribute<br><br>
 
 ### 1. Fork the Repository<br>
-When you fork this repository, a *copy* of this repository will show up on your github account. Changes made to that copy are not persistent to the this repository.
+When you fork this repository, a *copy* of this repository will show up on your github account. Changes made to that copy are not persistent to this repository.
 Additional actions need to be taken by collaborators in order to make changes to the existing content.<br>
 
 To fork this repository, in the upper right-hand corner of the screen there should be a button labeled **Fork**, click that.<br>
@@ -18,7 +18,7 @@ Doing so will send a copy of the repository to your **overview page**.
 
 ### 2. Clone the Repository<br>
 
-On your overview page, inside of your forked copy of this repository, navigate to a link called **"Code"**.
+On your overview page, inside of your forked copy of this repository, navigate to a button labeled **Code**, click it.
 
 <br>
 <p align="center"><img src = "https://user-images.githubusercontent.com/34849400/104873207-98f04300-5915-11eb-99c9-43f15a458568.png"/></p>
@@ -44,7 +44,7 @@ Then you'll want to change directories into the repository:<br><br>
 
 Once the repository has been cloned on your machine, you'll want to create a **branch**. You can do so by typing the following command on your bash:<br><br>
 
-                                git checkout -b <branch_name>
+                                git checkout -b someBranch
                                 
 <br><br>
 
@@ -72,7 +72,7 @@ Running this command will add the newly modified files onto the branch. You can 
 
 Finally, you can then run the following command to *commit* the changes.<br>
 
-                               git commit -m "fixing some thing"
+                               git commit -m "Capitalized the letters"
                                
 <br>
 
@@ -85,7 +85,7 @@ The -m flag denotes a message, followed by string containing the message.
 Now that the changes have been made, you'll want to **push** this branch back to the forked repository on github (available at your Overview). You can do this by running the
 following command:<br><br>
 
-                              git push origin <branch_name>
+                              git push origin someBranch
                               
 <br>
 
@@ -98,7 +98,7 @@ Once that command has been completed, refresh the link at the forked repository,
 ### 6. Pull Request<br>
 
 You'll want to click on **Compare & Pull Request**. This will populate the changes being proposed by the branch you just pushed to the original repository that your forked from.<br>
-<br>Here you will additionally enter a title for the changes you've made and provide a brief description for what those changes were, then you'll hit **Create Pull Request**.
+<br>Here you will additionally enter a title for the changes you've made, your commit message is the default, and provide a brief description for what those changes were, then you'll hit **Create Pull Request**.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/34849400/104877729-1456f200-5920-11eb-9b2e-b09642053963.png"/></p>
 
