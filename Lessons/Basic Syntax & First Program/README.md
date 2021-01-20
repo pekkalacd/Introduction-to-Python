@@ -43,10 +43,10 @@ Another syntax-related topic is the naming of variables. Like the before topic, 
 
 | Ex | OK | BAD |
 | -- | -- | --- |
-|  1 | age = 32 | a ge = 32 **No spaces allowed! This will throw an SyntaxError.** |
-|  2 | myName = "Mike" | my-Name = "Mike" **Cannot contain hyphens! This will throw an SyntaxError.** |
-|  3 | Animal = "Zebra" | $Animal = "Zebra" **Cannot start with special characters! This will throw an SyntaxError.** |
-|  4 | ```cost_33 = 1.22``` | ```33cost = 1.22``` **Cannot start with number! This will throw an SyntaxError.** |
+|  1 | age = 32 | a ge = 32 **No spaces allowed! SyntaxError** |
+|  2 | myName = "Mike" | my-Name = "Mike" **Cannot contain hyphens! SyntaxError** |
+|  3 | Animal = "Zebra" | $Animal = "Zebra" **Cannot start with special characters! SyntaxError** |
+|  4 | cost_33 = 1.22 | 33cost = 1.22 **Cannot start with number! SyntaxError** |
 |  5 | pizza4free = True | pizza4.0free = True **Must not contain membership operator '.'! This will throw an SyntaxError.** |
 |  6 | Olay = "Muahaha!" | O = "Muahaha!" **This is a bad practice. O is easy to confuse with numerical zero.** |
 |  7 | idaho = "Yippee!" | I = "Yippee!" **This is a bad practice.** Is I = l? If so, you see why this is a bad practice. Capital i is easy to confuse with lowercase L. |
