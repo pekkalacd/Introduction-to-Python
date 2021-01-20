@@ -43,11 +43,11 @@ Another syntax-related topic is the naming of variables. Like the before topic, 
 
 | Ex | OK | BAD |
 | -- | -- | --- |
-|  1 | age = 32 | a ge = 32 - no spaces allowed! This will throw an SyntaxError. |
-|  2 | myName = "Mike" | my-Name = "Mike" - cannot contain hyphens! This will throw an SyntaxError. |
-|  3 | Animal = "Zebra" | $Animal = "Zebra" - cannot start with special characters! This will throw an SyntaxError. |
-|  4 | ```cost_list = [1.22, 3.10, 4.00]``` | ```4cost_list = [1.22, 3.10, 4.00]``` - cannot start with number! This will throw an SyntaxError. |
-|  5 | pizza4free = True | pizza4.0free = True - must not contain membership operator '.'! This will throw an SyntaxError. |
+|  1 | age = 32 | a ge = 32 **No spaces allowed! This will throw an SyntaxError.** |
+|  2 | myName = "Mike" | my-Name = "Mike" **Cannot contain hyphens! This will throw an SyntaxError.** |
+|  3 | Animal = "Zebra" | $Animal = "Zebra" **Cannot start with special characters! This will throw an SyntaxError.** |
+|  4 | ```cost_33 = 1.22``` | ```33cost = 1.22``` **Cannot start with number! This will throw an SyntaxError.** |
+|  5 | pizza4free = True | pizza4.0free = True **Must not contain membership operator '.'! This will throw an SyntaxError.** |
 |  6 | Olay = "Muahaha!" | O = "Muahaha!" **This is a bad practice. O is easy to confuse with numerical zero.** |
 |  7 | idaho = "Yippee!" | I = "Yippee!" **This is a bad practice.** Is I = l? If so, you see why this is a bad practice. Capital i is easy to confuse with lowercase L. |
 |  8 | lol = "lololol!" | l = "lololol!" **This is a bad practice.** For the same reason above. Likewise, lowercase L is easy to confuse with capital i. |
