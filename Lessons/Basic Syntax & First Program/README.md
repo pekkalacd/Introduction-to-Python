@@ -72,7 +72,7 @@ A string is a type of *data structure* that is an array of characters. In Python
 
 <br>
 
-Strings can also be added together or **concatenated** in order to make a new string. When strings are concatenated together, a new string is **returned**.<br>
+Strings can also be added together or **concatenated** using the *addition operator* in order to **return** a new string.<br>
 
 ```
    birthday = "happy" + " " + "birthday!"
@@ -90,7 +90,7 @@ Strings can also be added together or **concatenated** in order to make a new st
    # output => TypeError: unsupported type(s) for -: 'str' and 'str'
 
 ```
-<br>This error tells us that the **operator - (minus sign)** does not work between strings.<br><br>
+<br>This error tells us that the *subtraction operator* does not work between strings.<br><br>
 
 #### Escape Sequences
 
@@ -98,7 +98,7 @@ A common tool used in strings, across many languages, are escape sequences. Thes
 
 | Common Escape Sequences | Meaning |
 | ------- |  --------- |
-| "\n" | newline |
+| "\n" | new line |
 | "\t" | horizontal tab |
 | "\v" | vertical tab |
 | "\\\\" | single backslash  |
@@ -106,7 +106,7 @@ A common tool used in strings, across many languages, are escape sequences. Thes
 
 
 
-<br>Example of newline:<br><br>
+<br>Example of **new line**:<br><br>
 ```
     print("first\nsecond\nthird")
     
@@ -114,25 +114,25 @@ A common tool used in strings, across many languages, are escape sequences. Thes
                 second
                 third
 ```
-<br>Example of horizontal tab:<br><br>
+<br>Example of **horizontal tab**:<br><br>
 ```
   print("Pre tab\t\tPost tab")
   
   # output => Pre tab        Post tab
 ```
-<br> Example of vertical tab: <br><br>
+<br> Example of **vertical tab**: <br><br>
 ```
    print("Hello World \v The Movie")
    
    # output => Hello World | The Movie  (note: vertical tab will look different than expressed here. ASCII DEC: 11)
 ```
-<br><br>Example of backslash:<br><br>
+<br><br>Example of **backslash**:<br><br>
 ```
    print("path =", "C:\\Users\\Self\\Desktop\\Folder\\")
    
    # output => path = C:\Users\Self\Desktop\Folder\
 ```
-<br>Example of alert:<br><br>
+<br>Example of **alert**:<br><br>
 ```
    "\a"
    
