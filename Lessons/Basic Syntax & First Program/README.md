@@ -37,12 +37,12 @@ Notice that the line ```x += i``` is *indented* below the for-loop ```for i in L
 
 ## Variable Naming
 
-Another syntax-related topic is the naming of variables. At its core, a variable is a programmer-named storage location. When creating variables, a value must be initialized to the variable using the assignment operator **=**. Because of Python's dynamic typing, you do not have to specify the type of the variable prior to initialization. Also, the type of the variable can readily change. While Python is our friend when creating variables, we must abide by naming rules otherwise Python will throw an **SyntaxError**.<br>
+Another syntax-related topic is the naming of variables. At its core, a variable is a programmer-named storage location. When creating variables, a value must be initialized to the variable using the assignment operator **=**. Because of Python's dynamic typing, you do not have to specify the type of the variable prior to initialization. Also, the type of the variable can readily change. While Python is our friend when creating variables, we must abide by naming rules otherwise Python will throw a **SyntaxError**.<br>
 
 ##### Naming Rules
 
-| OK            | BAD | ERROR | RULE |
-| ------------- | --- | ----- | ---- |
+| OK     | BAD | ERROR | RULE |
+| ------- | ------- | ------- | ------- |
 | age = 32 | a ge = 32 | SyntaxError | variable names cannot contain spaces | 
 | myName = "Mike" | my-Name = "Mike" | SyntaxError | variable names cannot contain special characters|
 | Animal = "Zebra" | 5 = "Zebra" | SyntaxError | literals cannot be used in assignment statements |
