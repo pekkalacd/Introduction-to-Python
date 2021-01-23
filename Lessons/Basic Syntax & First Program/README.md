@@ -144,7 +144,7 @@ A common tool used in strings, across many languages, are escape sequences. Thes
 
 In programming, a **literal** is a raw value that is usually assigned to a variable. For example in the assignment: ```name = "bill"```, "bill" is a string-literal. In Python, there are nifty ways to take advantage of literals with formatting. This applies beyond just strings alone. For now, we'll go over two literal pre-fixes: **'r' for raw strings** and **'f' for formatted strings**. 
 
-In the case you would like a string to displayed with these literal escape sequences in them, consider using a *raw string*. These contain the raw text included in each string, including escape sequences, and are marked by putting an **r** prefix before the string.<br><br>
+In the case you would like a string to be able to display these literal escape sequences in them when the print function is called, consider using a *raw string*. These contain the raw text included in each string, including escape sequences, and are marked by putting an **r** prefix before the string.<br><br>
 ```
    regular = "\nThere is a dog\nin the woods\nhaving fun"
    print(regular)
