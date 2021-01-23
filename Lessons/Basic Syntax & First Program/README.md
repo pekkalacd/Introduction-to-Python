@@ -90,9 +90,7 @@ Strings can also be added together or **concatenated** in order to make a new st
    # output => TypeError: unsupported type(s) for -: 'str' and 'str'
 
 ```
-<br>
-<br>
-This error tells us that the **operator -** does not work between strings. Why not though? **Because, strings are immutable in Python!**. We cannot change any string in place without creating a new string to store the changes.<br><br>
+<br>This error tells us that the **operator - (minus sign)** does not work between strings.<br><br>
 
 #### Escape Sequences
 
