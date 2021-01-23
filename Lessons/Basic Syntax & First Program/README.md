@@ -184,7 +184,7 @@ As you saw in the first subsection, Indentation & Scoping, using the **f** prefi
 
 A doc-string is a type of string that is primarily used for documentation purposes. For any programmer, documentation is very important. Not just for understanding what a specific program or pieces of code do, but for trouble shooting it when it doesn't work. If you are writing a program in Python that is intended for other people to use then along with comments, doc-strings are definitely something to consider using.<br><br>
 
-Doc-strings are noted with **triple quotation marks** these can be both double quotations or single quotations. Doc-strings can also be used to handle multi-line comments and multi-line strings in a simpler way than regular strings. For example, here we'll try to encapsulate Maya Angelou's Quote as a multi-line statement, breaking after the comma: <br>
+Doc-strings are noted with **triple quotes** these can be both double quotation or single quotation marks. Doc-strings can also be used to handle multi-line comments and multi-line strings in a simpler way than regular strings. For example, here we'll try to encapsulate Maya Angelou's quote as a multi-line statement, breaking after the comma: <br>
 > You will face many defeats in life, but never let yourself be defeated.
 <br>
 
