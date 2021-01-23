@@ -72,7 +72,7 @@ A string is a type of *data structure* that is an array of characters. In Python
 
 <br>
 
-Strings can also be added together or **concatenated** in order to make a new string. The concatenation of two strings **returns** a new string.<br>
+Strings can also be added together or **concatenated** in order to make a new string. When strings are concatenated together, a new string is **returned**<br>.
 
 ```
    birthday = "happy" + " " + "birthday!"
