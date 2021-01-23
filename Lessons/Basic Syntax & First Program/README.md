@@ -101,7 +101,7 @@ A common tool used in strings, across many languages, are escape sequences. Thes
 | "\n" | newline |
 | "\t" | horizontal tab |
 | "\v" | vertical tab |
-| "\\\\" | backslash \  |
+| "\\\\" | single backslash  |
 | "\a" | alert |
 
 
