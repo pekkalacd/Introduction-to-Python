@@ -310,12 +310,28 @@ Here is another:
    
    # output => Average between T_1 and T_o: 75.0 F
 ```
+<br><br><br>
+
+## First Program
+
+For experienced programmers, feel free to skip this, or stick around if you'd like. For beginners, do not fret if everything that was described above didn't resonate with you. While understanding syntax and the features Python has to offer is important, it is not a race. It is a marathon. Learning comes with time, practice, error, and dedication.<br>
+
+In the spirit of such practice, let's write your first program.<br>
+
+```
+    # my first program
+    
+    print("Hello World!")
+    
+    # output => "Hello World"
+    
+```
+
+**Bonus: Can you produce a program with the same functionality, but written a different way? how about 3 different ways?**<br><br><br><br>
 
 
-   
-   
-
- 
+### Move to [**Examples**](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Basic%20Syntax%20%26%20First%20Program/EXAMPLES.md)  or [**Exercises**](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Basic%20Syntax%20%26%20First%20Program/EXERCISES.md)<br>
+  
  
                   
        
