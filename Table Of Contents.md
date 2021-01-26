@@ -26,7 +26,10 @@
 
 [**Variables**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Variables)<br>
   What is a variable? Objects in Python. Example usage.<br>
-  - Resources: 
+  - Resources:
+      - [Built-in Types](https://docs.python.org/3/library/stdtypes.html)
+      - [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
+      - [Variables in Python](https://realpython.com/python-variables/)
 <br><br>
  
 [**Mutability, Casting, and Basic Data Types**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Mutability%2C%20Casting%2C%20and%20Basic%20Data%20Types)<br>
