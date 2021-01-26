@@ -239,7 +239,7 @@ To illustrate this concept a little more, let's build a neighborhood of variable
 - Each house consumes a different amount of bytes
 - All house variables are of type str
 
-The address of where the house is located is where the computer is putting the variable in memory. The bytes amount can be thought of as similar to the square footage of the home, these are homes of varying size. But in actuality, this is the amount of memory that the computer is allocating to store the variable. The variable names home1, home2, home3 are for us - the programmers - to keep track of.
+The address of where the house is located is where the computer is putting the variable in memory. The bytes amount can be thought of as similar to the square footage of the home, these are homes of varying size. But in actuality, this is the amount of memory that the computer is allocating to store the variable. The variable names home1, home2, home3 are each uniquely named and have been used to calculate the address created for each space. Beyond that, the names are identifiers that we - programmers - can use to refer to those specific memory locations containing their respective values.
 
 <br>
 
