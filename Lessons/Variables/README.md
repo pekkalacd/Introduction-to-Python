@@ -246,7 +246,7 @@ are homes of varying size. But in actuality, this is the amount of memory that t
 
 **This concludes the lesson about variables. We'll continue using variables moving forward in every lesson moving forward.**
 
-
+<br><br>
 
 ### Move to [Examples](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXAMPLES.md) or [Exercises](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXERCISES.md)
 
