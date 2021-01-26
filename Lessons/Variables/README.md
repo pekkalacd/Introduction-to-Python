@@ -141,7 +141,7 @@ Below are tables denoting the differences between each of these.
 </p>
 <br>
 
-For example, consider the example below.<br>
+For example, consider the snippet below.<br>
 ```
     import sys
     a = 150
