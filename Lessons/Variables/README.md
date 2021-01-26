@@ -45,7 +45,7 @@ In Python, a **List** is a built-in data type and its a data structure. A List *
 add items to and remove them from a List as they please and it will automatically adjust. This is just one example of a structure that could be stored in a variable, others
 include: dictionaries, sets, queues, tuples, strings, and more.<br>
 
-To make a list, we use square brackets **[ ... ]**. Inside of the square brackets, we separate objects by commas. For example, below we've created a list called "myList" which
+To make a list, we use square brackets **[ ... ]**. Inside of the square brackets, we separate elements by commas. For example, below we've created a list called "myList" which
 contains 3 elements: a string, an integer, and a float.<br>
 
 ```
@@ -239,12 +239,11 @@ To illustrate this concept a little more, let's build a neighborhood of variable
 - Each house consumes a different amount of bytes
 - All house variables are of type str
 
-The address of where the house is located is where the computer is putting the variable in memory. The bytes amount can be thought of the square footage of the home, these
-are homes of varying size. But in actuality, this is the amount of memory that the computer is allocating to store the variable. The variable names home1, home2, home3 are for us - the programmers - to keep track of.
+The address of where the house is located is where the computer is putting the variable in memory. The bytes amount can be thought of as similar to the square footage of the home, these are homes of varying size. But in actuality, this is the amount of memory that the computer is allocating to store the variable. The variable names home1, home2, home3 are for us - the programmers - to keep track of.
 
 <br>
 
-**This concludes the lesson about variables. We'll continue using variables moving forward in every lesson moving forward.**
+**This concludes the lesson about variables. We'll continue using variables in every lesson moving forward.**
 
 <br><br>
 
