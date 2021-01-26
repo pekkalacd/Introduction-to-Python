@@ -91,7 +91,7 @@ If we put these strings into variables and attempt to do the same operations, we
 ```
 <br>
 
-Consider that I wanted a string added to an integer. Then according to our understanding of types and variables thus far, it should be that that types of "int" and "str"
+Consider that I wanted a string added to an integer. Then according to our understanding of types and variables thus far, it should be that types of "int" and "str"
 should be able to work together without error. Otherwise, this cannot be done.<br>
 
 ```
@@ -124,9 +124,16 @@ of the space allocated in memory to store the value contained within a variable 
 
 #### In Python, everything is an object. 
 
-This is a topic that will come up in object oriented programming more. But for this reason, the size of the data-types seems conflicting
-with a language like C++. Another thing to note is that these are the *default* sizes which assume that we haven't configured it in any way. The phrase "everything is an object in
-Python" refers to the fact that every type has a full-fledged class with added functionality in attributes and methods. These features add more consumption to each specific data-type.
+This is a topic that will come up in object oriented programming more. For this reason, the size of the data-types might seem conflicting
+with a language like C++. In Python, each data type is a *class*. The definition of each of those classes are full-fledged and contain special functionality in attributes
+and methods. These features of Python's data types add bytes onto each type's total amount of data consumed.<br>
+
+Much like C++, however, individual literals of data types carry known byte amounts. For example, a signed integer in C++ is 4 bytes as is the same in Python. The general
+equation for the amount of bytes consumed by a data type in Python is as follows:<br>
+
+      # of bytes consumed =  (# of bytes consumed by instance of data-type ) + (# of bytes consumed by literal)
+
+Below are tables denoting the differences between each of these.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/34849400/105893964-5dbad780-5fd9-11eb-833b-d3ecf836428c.png"\>
