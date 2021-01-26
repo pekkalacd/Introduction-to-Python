@@ -181,7 +181,7 @@ In conjunction with a syntactically language like Python, variables are tools th
 <br><br>
 
 
-# Move to [Examples](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXAMPLES.md) or [Exercises](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXERCISES.md)
+## Move to [Examples](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXAMPLES.md) or [Exercises](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXERCISES.md)
 
 <br>
 
