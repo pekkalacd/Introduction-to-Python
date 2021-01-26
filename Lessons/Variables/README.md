@@ -183,12 +183,11 @@ vary in terms of how much memory is allocated. But each one will also have it's 
   <img src="https://user-images.githubusercontent.com/34849400/105873337-fe50cd80-5fc0-11eb-91bd-784b6e3d1099.png"/>
 </p>
 
-In conjunction with a syntactically language like Python, variables are tools that we can use to shift blocks of memory around in a manner that the computer can understand.<br>
+In this light, we can see variables as tools that can be used to shift blocks of memory around in a manner that the computer can understand.
 
 <br><br>
 
 
-## Move to [Examples](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXAMPLES.md) or [Exercises](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXERCISES.md)
+### Move to [Examples](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXAMPLES.md) or [Exercises](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXERCISES.md)
 
-<br>
 
