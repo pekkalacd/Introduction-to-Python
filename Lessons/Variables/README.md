@@ -65,7 +65,7 @@ Just as before, we can verify that the type of the value to the right of the ass
 ### Type Rules
 
 Each data-type has a set of rules which denote the operations that can be performed on it. A variable containing data of some type \
-must abide by the rules of that data-type. A variables' behavior aligns with that of the type of the data it stores.<br>
+must abide by the rules of that data-type. A variable's behavior aligns with that of the type of the data it stores.<br>
 
 For example, strings can "concatenate" with the addition operator, but cannot subtract with the subtraction operator.<br>
 
@@ -183,7 +183,7 @@ vary in terms of how much memory is allocated. But each one will also have it's 
   <img src="https://user-images.githubusercontent.com/34849400/105873337-fe50cd80-5fc0-11eb-91bd-784b6e3d1099.png"/>
 </p>
 
-In this light, we can see variables as tools that can be used to shift blocks of memory around in a manner that the computer can understand.
+**In this light, we can see variables as tools that can be used to shift blocks of memory around in a manner that the computer can understand.**
 
 <br><br>
 
