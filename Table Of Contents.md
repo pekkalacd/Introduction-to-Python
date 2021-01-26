@@ -22,6 +22,10 @@
 [**Basic Syntax & First Program**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Basic%20Syntax%20%26%20First%20Program)<br>
   Indentation. Variable assignment. String syntax. Comments. Doc-strings. Your first program. <br>
   - Resources:
+        - [Variable Name Rules](https://www.w3schools.com/python/gloss_python_variable_names.asp)
+        - [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
+        - [Escape Sequences](https://www.python-ds.com/python-3-escape-sequences)
+        - [Lexical Analysis](https://docs.python.org/3/reference/lexical_analysis.html)
 <br><br>
 
 [**Variables**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Variables)<br>
