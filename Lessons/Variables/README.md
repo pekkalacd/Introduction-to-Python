@@ -185,7 +185,67 @@ vary in terms of how much memory is allocated. But each one will also have it's 
 
 **In this light, we can see variables as tools that can be used to shift blocks of memory around in a manner that the computer can understand.**
 
-<br><br>
+<br>
+
+To illustrate this concept a little more, let's build a neighborhood of variables.<br>
+
+```
+    from sys import getsizeof
+    
+    # creating houses
+    house1 = "bill's house"
+    house2 = "dan's house"
+    house3 = "melinda's house"
+    
+    print("Welcome to the neighborhood!\n\n")
+    
+    # house 1 info
+    print("Name: ", house1)
+    print("Address:", hex(id(house1)))
+    print("Bytes:", getsizeof(house1))
+    
+    # house 2 info
+    print("\nName:", house2)
+    print("Address:", hex(id(house2)))
+    print("Bytes:", getsizeof(house2))
+    
+    # house 3 info
+    print("\nName:", house3)
+    print("Address:", hex(id(house3)))
+    print("Bytes:", getsizeof(house3))
+    
+    
+    # output => Welcome to the neighborhood!
+    
+                Name: bill's house
+                Address: 0x252f8ef2af0
+                Bytes: 61
+                
+                Name: dan's house
+                Address: 0x252f8ee2bb0
+                Bytes: 60
+                
+                Name: melinda's house
+                Address: 0x252f8ea2cf0
+                Bytes: 64
+```
+
+<br>
+
+**Things to notice here:**
+- Each house is it's own variable
+- Each house has a unique address
+- Each house name is of different length
+- Each house consumes a different amount of bytes
+- All house variables are of type str
+
+The address of where the house is located is where the computer is putting the variable in memory. The bytes amount can be thought of the square footage of the home, these
+are homes of varying size. But in actuality, this is the amount of memory that the computer is allocating to store the variable. The variable names home1, home2, home3 are for us - the programmers - to keep track of.
+
+<br>
+
+**This concludes the lesson about variables. We'll continue using variables moving forward in every lesson moving forward.**
+
 
 
 ### Move to [Examples](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXAMPLES.md) or [Exercises](https://github.com/pekkalacd/Introduction-to-Python/blob/master/Lessons/Variables/EXERCISES.md)
