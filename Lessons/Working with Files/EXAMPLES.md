@@ -1,8 +1,8 @@
 # Working with files
 
 ## Basic Python reading/writing files
-- General formula to read/write a fil eis **open(file_name, flag)** that flag is **'w'** for writing and **'r'** for reading. Then **close()** after reading/writing files
-- **NOTICE*:* The return of **open()** is **a file object, not content**. Hence, to truly read content, must call additional statements such as *read()* for reading text.
+- General formula to read/write a file is **open(file_name, flag)** that flag is **'w'** for writing and **'r'** for reading. Then **close()** after reading/writing files
+- **NOTICE**: The return of **open()** is **a file object, not content**. Hence, to truly read content, must call additional statements such as *read()* for reading text.
 - 2 ways to use **open()** function:
 	- Inline 
 	```
