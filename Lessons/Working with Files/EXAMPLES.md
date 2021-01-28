@@ -61,4 +61,37 @@
 		json.dumps(x, file)
 	```
 
-## Reading/Writing serialized data
+## Reading/Writing serialized data in Pickle files
+- Sometimes, you want to read/write a big file in order to save memory. It's not common today, but it is still necessary in industry
+- Package **pickle** can write any data types/structures into serialized data
+- When reading **pickle** file, the returned object inherits the data type/structure of the file content.
+- Use statement **open** with flags **rb** for reading and **wb** for writing
+```
+
+# write
+
+## write list
+l = ['hello', 1] # list
+with open('list.pickle', 'wb') as file:
+	pickle.dump(l, file)
+
+
+## write dictionary
+d = {'a' : 1, 'b' : 2, 'c' : 3} 
+with open('dict.pickle', 'wb') as file:
+	pickle.dump(d, file)
+
+## write string
+str = 'hello'
+with open('str.pickle', 'wb') as file:
+	pickle.dump(str, file)
+
+# read
+with open('list.pickle', 'rb') as file:
+	l = pickle.load(file) # l inherits the list type of content in list.pickle
+	print(type(l)) # >> list
+
+with open('dict.pickle', 'rb') as file:
+	d = pickle.load(file) # d inherits the dictionary type of content in dict.pickle
+	print(type(d)) # >> dict
+```
