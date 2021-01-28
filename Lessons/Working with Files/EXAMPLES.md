@@ -37,3 +37,28 @@
 	with open('file2.txt', 'w') as file:
 		file.write('hello world')
 	```
+
+## Reading/Wring JSON files
+- JSON is a special data structure mixed of dictionary-like and list-like. JSON format is heavily used in RESTful API. 
+- Besides being heavily used mathematic computations for scientists & researchers, Python is used for Backend. Example Python-based backend packages such as Django, Flask, etc. Hence, learng to work with JSON files in python is crucial.
+	- Inline
+	```
+	# read
+	x = json.load(open('file.json', 'r'))
+
+	# write, given x as a JSON object
+	json.dumps(x, open('file.json', 'w'))
+	```
+
+	- Using **with** statement
+	```
+	# read
+	with open('file.json', 'r') as file:
+		x = json.load(file)
+
+	# write, given x as a JSON object
+	with open('file.json', 'w') as file:
+		json.dumps(x, file)
+	```
+
+## Reading/Writing serialized data
