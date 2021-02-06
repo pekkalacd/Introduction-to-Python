@@ -115,7 +115,7 @@ If these two conditions are met, then statements or expressions are evaluated in
    <img src="https://user-images.githubusercontent.com/34849400/107112096-900ad700-681a-11eb-8180-e0544de05bb0.png"/>
 </p>
 <br>
-Considering the previous example, suppose we'd like to evaluate ``50//10*32/31*8//4``. Notice, all of the operators used here are multiplicative.<br>
+Considering the previous example, suppose we'd like to evaluate ```50//10*32/31*8//4```. Notice, all of the operators used here are multiplicative.<br>
 
 ```
    (50//10)*32/31*8//4        # all //, *, / are on the same level of precedence and // and * share the operand 10, so it's left-to-right associativity
