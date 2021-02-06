@@ -172,14 +172,12 @@ Mathematical operators, as the name implies, are responsible for performing math
 |**/**| division | binary | divides two operands of numeric type and returns their quotient as a float |
 |**//**| floor-division | binary | divides two operands of numeric type and returns their integer divsion |
 |**%** | modulus | binary | divides two operands of numeric type and returns their remainder as an integer |
-|  **  | exponential | binary | exponentiates the left numeric operand by the right numeric operand and returns the result as a float |
-<br>
-
-You'll notice in the column labeled *Type* that each of these operators are **binary**. This is not referring to binary in the sense of 1's and 0's, but rather to the requirement of needing two operands in order to function.<br>
+|  **  | exponential | binary | exponentiates the left by the right numeric operand|
+<br><br>
 
 ### Addition Operator
 
-Like mathematical addition, the *addition operator* functions as the addition, concatenation, and extension operator of Python's objects. It's a binary operator, meaning it requires two operands on either side of the **+** sign, and it's commutative.<br>
+Like mathematical addition, the *addition operator* functions as the addition of two numeric operands and it's commutative. In Python, this operator is also responsible for string concatenation and can be used to extend Lists. It's a binary operator, meaning it requires two operands on either side of the **+** sign.<br>
 
 ```
    3+3
@@ -198,7 +196,7 @@ There are certain data-types we can apply the addition operator to and others th
    <img src="https://user-images.githubusercontent.com/34849400/107110273-369bab80-680c-11eb-84d7-75428794ccc4.png"/>
 </p>
 
-The addition operator takes two *operands* on either side of the sign and performs a specified action based on the type of the operands. With this, there are limitations to what can be *added*, so-to-speak, and what cannot. See the table below.<br><br>
+While numeric types are generally in the clear when using the addition operator, there are some combinations of operand types that cannot be added. See the table below.<br><br>
 
 For *strings*, the addition operator is the mode of ***concatenation***. Two or more strings, with each pair separated by the addition operator will be combined or concatenated
 together linearly.<br>
@@ -232,9 +230,44 @@ For *Lists*, this operator serves to *extend* the left list by the right list. S
    # output => [1,2,3,4,5,6,7,8,9,10]
    
  ```
- <br>
+ <br><br>
+ 
+ ### Subtraction Operator
+ 
+In the scope of mathematics, subtraction can be viewed in multiple ways. It can be seen as the addition of one value x and another -c for which x and c are part of number sets that are comparable. In Python, contrary to the what the addition operator can do, the subtraction operator does not work on strings or lists. It can be used to find the difference between two numeric types or sets.<br>
 
-{keep working on this...}
+```
+  A = 13
+  B = 2
+  A - B
+  # output => 11
+  
+  s1 = set([1,2,3])
+  s2 = set([1,2])
+  s1 - s2
+  # output => {3}
+```
+<br>
+
+The above use of the subtraction operator for numeric types is straight forward, but the usage of the operator when it comes to sets might be a surprise.<br>
+
+In discrete mathematics, the difference of two sets A and B is the set of elements that are contained within A that are not in B. Oppositely, the difference between a set B and
+a set A is the set of elements in B that are not in A.<br>
+
+```
+   A = {1,23}
+   B = {1}
+   A - B
+   # output => {23}  since 23 is in A but not in B
+   
+   B - A
+   # output => set()  or empty set object since all of the elements of B -  1 - are also in A.
+```
+<br>
+
+Just as it was with addition, there are certain types that can be subtracted from one another and those that cannot. See the table below.<br>
+
+{continue working on this}
 
 
 
