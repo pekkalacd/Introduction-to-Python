@@ -28,7 +28,7 @@ For example, in the statement ``2 + 3``, notice the addition operator **+** is s
 ### Precedence
 
 The requirement for two operands **does not mean** that only two literals or objects can be operated upon at a time. More complex statements such as ``12+14+13/2*9//7%4`` can also be evaluated. Because statements like this *share* operands with other operators acting on those same operands, this is where **operator precedence** would need to be considered.<br><br>
-**The higher the operator on this chart, the more *precedence* it takes over other operators if used in the same statement.**<br><br>
+**The higher the operator on this [chart](https://www.programiz.com/python-programming/precedence-associativity), the more *precedence* it takes over other operators if used in the same statement.**<br><br>
 
 <p align="center">
    <img src="https://user-images.githubusercontent.com/34849400/107108718-ad7e7780-67ff-11eb-94d7-109e2bcc06aa.png"/>
