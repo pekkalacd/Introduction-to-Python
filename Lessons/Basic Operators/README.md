@@ -99,7 +99,7 @@ For more information on operator or keyword precedence, you can access informati
 
 ### Associativity
 
-Along the same train of thought as precedence, sometimes a statement or expression will contain two or more operators on the same level precedence. For example, if //, /, and % were all used in the same statement, which one would execute first?<br>
+Sometimes a statement or expression will contain two or more operators on the same level precedence. For example, if //, /, and % were all used in the same statement, which one would execute first?<br>
 
 This would be a scenario where *associativity* would come into play.
 
