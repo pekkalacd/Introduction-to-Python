@@ -22,6 +22,35 @@ Mathematical operators, as the name implies, are responsible for performing math
 |  **  | exponential | binary | exponentiates the left numeric operand by the right numeric operand and returns the result as a float |
 <br>
 
+You'll notice in the column labeled *Type* that each of these operators are **binary**. This is not referring to binary in the sense of 1's and 0's, but rather to the requirement of needing **2 operands** in order to function. An **operand** is an object or literal that is used in conjunction with an operator for a specific action to be done.
+For example, in the statement ``2 + 3``, notice the addition operator **+** is surrounded by two integer-literals '2' and '3'. These are *operands*.<br>
+
+### Precedence
+
+The requirement for two operands **does not mean** that only two literals or objects can be operated upon at a time. More complex statements such as ``12+14+13/2*9//7%4`` can also be evaluated. Because statements like this *share* operands with other operators acting on those same operands, this is where **operator precedence** would need to be considered.<br><br>
+**The higher the operator on this chart, the more *precedence* it takes over other operators if used in the same statement.**<br><br>
+
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/34849400/107108718-ad7e7780-67ff-11eb-94d7-109e2bcc06aa.png"/>
+</p>
+
+<br><br>
+
+Precedence is what dictates which operator performs its action first, before other operators. Consider the following example, looking at the previously given statement ``12+14+13/2*9//7%4``.<br><br>
+
+```
+  12+14+13/2*9//7%4
+  12+14+13/(2*9)//7%4              # since * has the highest precedence
+  12+14+(13/18)//7%4               # since / has the next highest precedence 
+  12+14+(0.7222222222222222//7)%4  # since // has the next highest precedence
+  12+14+(0%4)                      # since % has the next highest precedence
+  (12+14)+0                        # since + and + are same, left-to-right associativity kicks in
+  26+0                             # since there's only 1 + left, this is evaluated
+  
+  # output => 26
+```
+<br>
+
 ### Addition Operator
 
 Like mathematical addition, the *addition operator* functions as the addition, concatenation, and extension operator of Python's objects. It's a **binary operator**, meaning it requires two **operands** on either side of the **+** sign.<br>
@@ -65,17 +94,26 @@ together linearly.<br>
    print(phrase)
    # output => 'hello there my friend!'
 ```
-<br>
+<br><br>
 
-There is a reason for this linearity in the concatenation of strings and it's in the definition of a string, being an *array of characters*. In other languages like C, strings
-are formed other ways that are a little more obvious of this definition: ```char string[] = "hello there my friend!"; ```. An array is a linear data structure which can hold multiple objects or literals in **contiguous memory**.<br>
+For *Lists*, this operator serves to *extend* the left list by the right list. This can also be accomplished by using the ```list.extend(list_object)``` member-function or method of the builtin List class.<br>
 
-*Contiguous Memory* is memory that is stored one after the other in a linear fashion. A high-level abstraction of what this might look like is below.<br>
-
-<p align="center">
-   <img src=" "/>
-</p>
-
+```
+   List1 = [1,2,3]
+   List2 = [4,5,6]
+   List1.extend(List2)
+   # output => [1,2,3,4,5,6]
+   
+   List2.extend(List1)
+   # output => [4,5,6,1,2,3]
+   
+   List1 + List2
+   # output => [1,2,3,4,5,6]
+   
+   List2 + List1
+   # output => [4,5,6,1,2,3]
+ ```
+ <br>
 
 {keep working on this...}
 
