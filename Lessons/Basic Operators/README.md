@@ -87,8 +87,7 @@ For example, in evaluating ``2 + 3 * 5`` we'd do:<br>
 ```
 
 Much like in mathematics, operators in programming languages also abide by their own order of operations. <br><br>
-**The order at which statements or expressions are evaluated is dictated by *operator precedence***.<br><br>
-
+**The order at which statements or expressions are evaluated is dictated by *operator precedence***.<br>
 **If two operators with different precedence levels are in the same statement or expression, the operator with the highest precedence will execute first.**<br><br>
 
 <p align="center">
@@ -109,7 +108,7 @@ This would be a scenario where *associativity* would come into play.
    **2. Each operator is on the same level of precedence**<br>
 <br>
 
-If these two conditions are met, then statements or expressions are evaluated in associatively, not by precedence. The rules for associativity vary by precedence level.<br><br>
+If these two conditions are met, then statements or expressions are evaluated associatively, not by precedence. The rules for associativity vary by precedence level.<br><br>
 
 <p align="center">
    <img src="https://user-images.githubusercontent.com/34849400/107112096-900ad700-681a-11eb-8180-e0544de05bb0.png"/>
@@ -121,7 +120,7 @@ If these two conditions are met, then statements or expressions are evaluated in
 
 ```
    We want to evaluate 50//10*32/31*8//4.  
-   All *, /, // are multiplicative operators and share an operands with each other.
+   All *, /, // are multiplicative operators and share operands with each other.
    
    
    (50//10)*32/31*8//4        # all //, *, / have same precedence and share operand 10, left-to-right associativity
