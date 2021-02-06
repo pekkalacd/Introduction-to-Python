@@ -102,36 +102,50 @@ For more information on operator or keyword precedence, you can access informati
 
 Along the same train of thought as precedence, sometimes a statement or expression will contain two or more operators on the same level precedence. For example, if //, /, and % were all used in the same statement, which one would execute first?<br>
 
+This would be a scenario where *associativity* would come into play.
+
 **Rules of Associativity:**<br>
    **1. Two operators share the same operand**<br>
    **2. Each operator is on the same level of precedence**<br>
 <br>
 
-If these two conditions are met, then statements or expressions are evaluated in associatively, not by precedence. The rules for associativity vary by precedence level.<br>
+If these two conditions are met, then statements or expressions are evaluated in associatively, not by precedence. The rules for associativity vary by precedence level.<br><br>
 
 <p align="center">
    <img src="https://user-images.githubusercontent.com/34849400/107112096-900ad700-681a-11eb-8180-e0544de05bb0.png"/>
 </p>
 <br>
-
-#### Applying Operator Precedence
-Consider the following example which evaluates ``12+14+13/2*9//7%4``. This statement uses multiple operators. So, we must refer to precedence when evaluating.<br><br>
+Considering the previous example, suppose we'd like to evaluate ``50//10*32/31*8//4``. Notice, all of the operators used here are multiplicative.<br>
 
 ```
-  12+14+13/(2*9)//7%4              # happens 1st, since * has the highest precedence
-  12+14+(13/18)//7%4               # happens 2nd, since / has the next highest precedence 
-  12+14+(0.7222222222222222//7)%4  # happens 3rd, since // has the next highest precedence
-  12+14+(0%4)                      # happens 4th, since % has the next highest precedence
-  (12+14)+0                        # happens 5th, since + and + are same, left-to-right associativity kicks in
-  26+0                             # happens last, since there's only 1 + left, this is evaluated
-  
-  # output => 26
+   (50//10)*32/31*8//4        # all //, *, / are on the same level of precedence and // and * share the operand 10, so it's left-to-right associativity
+   (5*32)/31*8//4             # since * and / share the operand 32 and are on the same level of precedence, so left-to-right associativity again
+   (160/31)*8//4              # once again / and * share the operand 31 and are the same precedence wise, so left-to-right again
+   (5.161290322580645*8)//4   # since * and // shares the operand 8 and are the same precedence, so left-to-right again
+   41.29032258064516//4       # only // remains
+   
+   # output => 10.0
 ```
 <br>
 
-Along with the concept of operator precedence is **associativity**. 
+#### Combining Precedence & Associativity Rules
 
-{write more about Python associativity}
+Consider the following example which evaluates ``12+14+13/2*9//70%4**2``. This statement uses multiple operators that have varying levels of precedence and associativity. So, we must refer to precedence and associativity rules when evaluating.<br><br>
+
+```
+  12+14+13/2*9//70%(4**2)              # happens 1st, since ** has the highest precedence
+  12+14+(13/2)*9//70%16                # happens 2nd, since all multiplicative operators have higher precedence than additive. And / and * share the operand 2.
+                                         So, this is left-to-right associativity.
+                                         
+  12+14+(6.5*9)//70%16                 # happens 3rd, since now * and // share the operand 9 and are on the same precedence, so left-to-right associativity.
+  12+14+(58.5//70)%16                  # happens 4th, since // and % share the operand 70 and are on the same precedence, so left-to-right associativity.
+  12+14+(0.0%16)                       # happens 5th, since % has a higher precedence than +.
+  (12+14)+0.0                          # happens 6th, since the operators are the same, so left-to-right associativity.
+  26+0.0                               # happens last, since there's only 1 operator left.
+  
+  # output => 26.0
+  
+```
 
 <br><br>
 
