@@ -116,6 +116,12 @@ This would be a scenario where *associativity* would come into play.
 
 <br><br>
 
+If associativity has kicked in, then we know that there are two operators on the same level of precedence that share an operand.<br>
+ - **Left-to-Right associativity** means that we process the left operator first, then the right one.<br>
+ - **Right-to-Left associativity** is the opposite; we process the right operator first, then the left one.<br>
+ <br>
+
+
 #### Associativity in Action
 
 ```
