@@ -114,10 +114,14 @@ If these two conditions are met, then statements or expressions are evaluated in
 <p align="center">
    <img src="https://user-images.githubusercontent.com/34849400/107112096-900ad700-681a-11eb-8180-e0544de05bb0.png"/>
 </p>
-<br>
-Considering the previous example, suppose we'd like to evaluate ```50//10*32/31*8//4``` . Notice, all of the operators used here are multiplicative.<br>
+
+
+#### Associativity in Action
 
 ```
+   We want to evaluate 12+14+(13/2)*9//70%16
+   
+   
    (50//10)*32/31*8//4        # all //, *, / have same precedence and share operand 10, left-to-right associativity
    (5*32)/31*8//4             #  * and / share operand 32, left-to-right associativity again
    (160/31)*8//4              # / and * share operand 31, so left-to-right again
@@ -126,7 +130,7 @@ Considering the previous example, suppose we'd like to evaluate ```50//10*32/31*
    
    # output => 10.0
 ```
-<br>
+<br><br>
 
 #### Combining Precedence & Associativity Rules
 
@@ -138,7 +142,7 @@ Consider the following example which evaluates ``12+14+13/2*9//70%4**2``. This s
                                          And / and * share the operand 2. So, this is left-to-right associativity.
                                          
   12+14+(6.5*9)//70%16                 # * and // share operand 9, left-to-right associativity.
-  12+14+(58.5//70)%16                  # // and % share operand 70 and are on the same precedence, left-to-right associativity.
+  12+14+(58.5//70)%16                  # // and % share operand 70, left-to-right associativity.
   12+14+(0.0%16)                       # % has a higher precedence than +.
   (12+14)+0.0                          # same operator, additive are left-to-right associativity.
   26+0.0                               # only 1 operator left.
@@ -147,7 +151,7 @@ Consider the following example which evaluates ``12+14+13/2*9//70%4**2``. This s
   
 ```
 
-<br><br>
+<br><br><br>
 
 ## Mathematical Operators
 <br>
