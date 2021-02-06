@@ -90,7 +90,7 @@ Much like in mathematics, operators in programming languages also abide by their
 See the following [chart](https://www.programiz.com/python-programming/precedence-associativity) below for more clarification. The higher an operator is, the more precedence it has over other operators. Meaning if two or more different operators are used in the same statement, the operation whose operator has the highest precedence will happen first.<br>
 
 <p align="center">
-   <img src="https://user-images.githubusercontent.com/34849400/107108718-ad7e7780-67ff-11eb-94d7-109e2bcc06aa.png"/>
+   <img src="https://user-images.githubusercontent.com/34849400/107111709-b3805280-6817-11eb-83cd-70b341f1be9f.png"/>
 </p>
 
 For more information on operator or keyword precedence, you can access information directly in the Python interpreter by typing an operator in a string and inserting it into the help function like so **``help('+')``**. <br>
@@ -113,7 +113,9 @@ Along with the concept of operator precedence is **associativity**.
 
 {write more about Python associativity}
 
-### Mathematical Operators
+<br><br>
+
+## Mathematical Operators
 <br>
 Mathematical operators, as the name implies, are responsible for performing mathematical operations on numeric data-types such as addition, subtraction, multiplication, division, floor-division, modulation, and exponentiation. Consider the table below for the Python representation of each.<br><br>
 
