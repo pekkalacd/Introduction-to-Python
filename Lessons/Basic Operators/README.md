@@ -43,8 +43,8 @@ In Python, there are no ternary operators. However, *ternary expressions* can st
  ```
 <br>
 
-In other languages, the **?** ternary operator might be used to form ternary expressions. A ternary expression is commonly associated with if-else chains as a viable alternative. The way a ternary expression is evaluated in Python is: <br>
-``{result if expression is true} if {expression} else {result if expression is false}``.<br>
+In other languages, the **?** ternary operator might be used to form ternary expressions. A ternary expression is commonly associated with if-else chains as a viable alternative. The way a ternary expression is evaluated in Python is:<br><br>
+```{result if expression is true} if {expression} else {result if expression is false}```<br>
 
 Consider the sample below, where we're determining if the number 32 is even or odd and printing whether it is or isn't.<br>
 
@@ -77,16 +77,15 @@ Before we get started into the specific operator umbrellas, consider the subhead
 For example, in mathematics, if we wanted to evaluate ```2 + 3 * 5``` we might refer to **PEMDAS** which is the acronym for the *order of operations*; that is, **P**arentheses, **E**xponents, **M**ultiplication, **A**ddition, and **S**ubtraction. The earlier an operation resides in the acryonym, PEMDAS, the more *precedence* that operation has over the others.<br>
 
 For example, in evaluating ``2 + 3 * 5`` we'd do:<br>
-``
+
+```
     2 + (3*5)  # since multiplication 'M' comes before addition 'A' in 'PEMDAS'
     2 + 15     # now, we'd add since there's only 1 operator left
     17
-``
-
-<br>
+```
 
 Much like in mathematics, operators in programming languages also abide by their own order of operations. <br><br>
-**The order at which statements or expressions are evaluated is dictated by *operator precedence***.<br>
+**The order at which statements or expressions are evaluated is dictated by *operator precedence***.<br><br>
 
 See the following [chart](https://www.programiz.com/python-programming/precedence-associativity) below for more clarification. The higher an operator is, the more precedence it has over other operators. Meaning if two or more different operators are used in the same statement, the operation whose operator has the highest precedence will happen first.<br>
 
