@@ -70,7 +70,7 @@ Consider the sample below, where we're determining if the number 32 is even or o
 
 For the sake of the rest of this lesson, we will not be focusing as much on ternary expressions, but we might come back to them as alternatives in the if-elif-else lesson.
 
-### Precedence and Associativity
+### Precedence
 
 Before we get started into the specific operator umbrellas, consider the subheading. The *precedence* of an operator determines when that operation will be applied. When programmers talk about precedence, they are usually referring to the use of multiple types of operators in a specific statement.<br>
 
@@ -87,15 +87,33 @@ For example, in evaluating ``2 + 3 * 5`` we'd do:<br>
 Much like in mathematics, operators in programming languages also abide by their own order of operations. <br><br>
 **The order at which statements or expressions are evaluated is dictated by *operator precedence***.<br><br>
 
-If two or more operators are in the same statement or expression, the operator with the highest precedence will execute first.<br>
+**If two or more operators are in the same statement or expression, the operator with the highest precedence will execute first.**<br><br>
 
 <p align="center">
-   <img src="https://user-images.githubusercontent.com/34849400/107111709-b3805280-6817-11eb-83cd-70b341f1be9f.png"/>
+   <img src="https://user-images.githubusercontent.com/34849400/107112326-6652af80-681c-11eb-89a1-accad15c0898.png"/>
 </p>
+<br>
 
-For more information on operator or keyword precedence, you can access information directly in the Python interpreter by typing an operator in a string and inserting it into the help function like so **``help('+')``**. <br>
+For more information on operator or keyword precedence, you can access information directly in the Python interpreter by typing an operator in a string and inserting it into the help function like so **``help('+')``**. <br><br>
 
-Now, consider the following example which evaluates ``12+14+13/2*9//7%4``. This statement uses multiple operators. So, we must refer to precedence when evaluating.<br><br>
+### Associativity
+
+Along the same train of thought as precedence, sometimes a statement or expression will contain two or more operators on the same level precedence. For example, if //, /, and % were all used in the same statement, which one would execute first?<br>
+
+**Rules of Associativity:**<br>
+   **1. Two operators share the same operand**<br>
+   **2. Each operator is on the same level of precedence**<br>
+<br>
+
+If these two conditions are met, then statements or expressions are evaluated in associatively, not by precedence. The rules for associativity vary by precedence level.<br>
+
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/34849400/107112096-900ad700-681a-11eb-8180-e0544de05bb0.png"/>
+</p>
+<br>
+
+#### Applying Operator Precedence
+Consider the following example which evaluates ``12+14+13/2*9//7%4``. This statement uses multiple operators. So, we must refer to precedence when evaluating.<br><br>
 
 ```
   12+14+13/(2*9)//7%4              # happens 1st, since * has the highest precedence
