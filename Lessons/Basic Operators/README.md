@@ -115,13 +115,13 @@ If these two conditions are met, then statements or expressions are evaluated in
    <img src="https://user-images.githubusercontent.com/34849400/107112096-900ad700-681a-11eb-8180-e0544de05bb0.png"/>
 </p>
 <br>
-Considering the previous example, suppose we'd like to evaluate ```50//10*32/31*8//4```. Notice, all of the operators used here are multiplicative.<br>
+Considering the previous example, suppose we'd like to evaluate ```50//10*32/31*8//4``` . Notice, all of the operators used here are multiplicative.<br>
 
 ```
-   (50//10)*32/31*8//4        # all //, *, / are on the same level of precedence and // and * share the operand 10, so it's left-to-right associativity
-   (5*32)/31*8//4             # since * and / share the operand 32 and are on the same level of precedence, so left-to-right associativity again
-   (160/31)*8//4              # once again / and * share the operand 31 and are the same precedence wise, so left-to-right again
-   (5.161290322580645*8)//4   # since * and // shares the operand 8 and are the same precedence, so left-to-right again
+   (50//10)*32/31*8//4        # all //, *, / have same precedence and share operand 10, left-to-right associativity
+   (5*32)/31*8//4             #  * and / share operand 32, left-to-right associativity again
+   (160/31)*8//4              # / and * share operand 31, so left-to-right again
+   (5.161290322580645*8)//4   #  * and // share operand 8, so left-to-right again
    41.29032258064516//4       # only // remains
    
    # output => 10.0
@@ -133,15 +133,15 @@ Considering the previous example, suppose we'd like to evaluate ```50//10*32/31*
 Consider the following example which evaluates ``12+14+13/2*9//70%4**2``. This statement uses multiple operators that have varying levels of precedence and associativity. So, we must refer to precedence and associativity rules when evaluating.<br><br>
 
 ```
-  12+14+13/2*9//70%(4**2)              # happens 1st, since ** has the highest precedence
-  12+14+(13/2)*9//70%16                # happens 2nd, since all multiplicative operators have higher precedence than additive. And / and * share the operand 2.
-                                         So, this is left-to-right associativity.
+  12+14+13/2*9//70%(4**2)              # ** has the highest precedence
+  12+14+(13/2)*9//70%16                # all multiplicative operators have higher precedence than additive. 
+                                         And / and * share the operand 2. So, this is left-to-right associativity.
                                          
-  12+14+(6.5*9)//70%16                 # happens 3rd, since now * and // share the operand 9 and are on the same precedence, so left-to-right associativity.
-  12+14+(58.5//70)%16                  # happens 4th, since // and % share the operand 70 and are on the same precedence, so left-to-right associativity.
-  12+14+(0.0%16)                       # happens 5th, since % has a higher precedence than +.
-  (12+14)+0.0                          # happens 6th, since the operators are the same, so left-to-right associativity.
-  26+0.0                               # happens last, since there's only 1 operator left.
+  12+14+(6.5*9)//70%16                 # * and // share operand 9, left-to-right associativity.
+  12+14+(58.5//70)%16                  # // and % share operand 70 and are on the same precedence, left-to-right associativity.
+  12+14+(0.0%16)                       # % has a higher precedence than +.
+  (12+14)+0.0                          # same operator, additive are left-to-right associativity.
+  26+0.0                               # only 1 operator left.
   
   # output => 26.0
   
