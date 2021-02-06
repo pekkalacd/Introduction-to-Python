@@ -129,10 +129,10 @@ If associativity has kicked in, then we know that there are two operators on the
    All *, /, // are multiplicative operators and share operands with each other.
    
    
-   (50//10)*32/31*8//4        # all //, *, / have same precedence and share operand 10, left-to-right associativity
-   (5*32)/31*8//4             #  * and / share operand 32, left-to-right associativity again
-   (160/31)*8//4              # / and * share operand 31, so left-to-right again
-   (5.161290322580645*8)//4   #  * and // share operand 8, so left-to-right again
+   (50//10)*32/31*8//4        # // and * share operand 10, left-to-right associativity
+   (5*32)/31*8//4             #  * and / share operand 32, left-to-right associativity
+   (160/31)*8//4              # / and * share operand 31, left-to-right associativity
+   (5.161290322580645*8)//4   #  * and // share operand 8, left-to-right associativity
    41.29032258064516//4       # only // remains
    
    # output => 10.0
