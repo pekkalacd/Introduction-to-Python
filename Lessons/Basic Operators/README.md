@@ -7,7 +7,7 @@ In order to do so, however, **operators** are used. There are a multitude of ope
 
 This section will cover the general basics of each operator group.<br>
 
-## Unary, Binary, and Ternary
+### Unary, Binary, and Ternary
 
 Operators require the use of *operands* in order to perform some action or evaluate an expression. An **operand** is an object or literal that is used in conjunction with an operator. In most languages, there are three kinds of operators: *unary*, *binary*, and *ternary*. A **unary operator** requires one operand that sits to the right of the operator. A **binary operator** requires two operands which sit on either side of the operator. And a **ternary operator** requires two operands on either side and an additional one on a single side.<br>
 
@@ -69,7 +69,7 @@ Consider the sample below, where we're determining if the number 32 is even or o
 
 For the sake of the rest of this lesson, we will not be focusing as much on ternary expressions, but we might come back to them as alternatives in the **if-elif-else** lesson.
 
-## Precedence and Associativity
+### Precedence and Associativity
 
 Before we get started into the specific operator umbrellas, consider the subheading. The *precedence* of an operator determines when that operation will be applied. When programmers talk about precedence, they are usually referring to the use of multiple types of operators in a specific statement.<br>
 
@@ -103,7 +103,9 @@ Now, consider the following example which evaluates ``12+14+13/2*9//7%4``. This 
 
 Along with the concept of operator precedence is **associativity**. 
 
-## Mathematical Operators
+{write more about Python associativity}
+
+### Mathematical Operators
 <br>
 Mathematical operators, as the name implies, are responsible for performing mathematical operations on numeric data-types such as addition, subtraction, multiplication, division, floor-division, modulation, and exponentiation. Consider the table below for the Python representation of each.<br><br>
 
