@@ -52,7 +52,7 @@ Precedence is what dictates which operator performs its action first, before oth
 
 ### Addition Operator
 
-Like mathematical addition, the *addition operator* functions as the addition, concatenation, and extension operator of Python's objects. It's a **binary operator**, meaning it requires two **operands** on either side of the **+** sign.<br>
+Like mathematical addition, the *addition operator* functions as the addition, concatenation, and extension operator of Python's objects. It's a binary operator, meaning it requires two operands on either side of the **+** sign.<br>
 
 ```
    3+3
