@@ -39,13 +39,12 @@ The requirement for two operands **does not mean** that only two literals or obj
 Precedence is what dictates which operator performs its action first, before other operators. Consider the following example, looking at the previously given statement ``12+14+13/2*9//7%4``.<br><br>
 
 ```
-  12+14+13/2*9//7%4
-  12+14+13/(2*9)//7%4              # since * has the highest precedence
-  12+14+(13/18)//7%4               # since / has the next highest precedence 
-  12+14+(0.7222222222222222//7)%4  # since // has the next highest precedence
-  12+14+(0%4)                      # since % has the next highest precedence
-  (12+14)+0                        # since + and + are same, left-to-right associativity kicks in
-  26+0                             # since there's only 1 + left, this is evaluated
+  12+14+13/(2*9)//7%4              # happens 1st, since * has the highest precedence
+  12+14+(13/18)//7%4               # happens 2nd, since / has the next highest precedence 
+  12+14+(0.7222222222222222//7)%4  # happens 3rd, since // has the next highest precedence
+  12+14+(0%4)                      # happens 4th, since % has the next highest precedence
+  (12+14)+0                        # happens 5th, since + and + are same, left-to-right associativity kicks in
+  26+0                             # happens last, since there's only 1 + left, this is evaluated
   
   # output => 26
 ```
