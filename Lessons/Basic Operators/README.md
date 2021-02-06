@@ -67,20 +67,9 @@ Like mathematical addition, the *addition operator* functions as the addition, c
 
 There are certain data-types we can apply the addition operator to and others that we cannot.<br>
 
-| DATA-TYPES |  EXAMPLE |  STATUS |
-| ---------- | -------- | ------- |
-|  int+int   |  2 + 3   |  **OK** |
-|  int+float | 4.3 + 2  |  **OK** |
-|  float+float| 12.323+11.22 | **OK** |
-|  list+list | [1,2,3]+[2] | **OK** |
-|  str+str   | "hello "+"world!" | **OK** |
-|  int+str   | 5+"jello"|  **ERROR**|
-|  float+str | 11.111+"abc"| **ERROR**|
-|  list+int  | [1,2,3] + 4 | **ERROR**|
-|  list+float | [4]+4.2    | **ERROR**|
-|  set+set    | {1,2}+{3}  | **ERROR**|
-|  dict+dict  | {1:2}+{0:3} | **ERROR**|
-<br>
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/34849400/107110273-369bab80-680c-11eb-84d7-75428794ccc4.png"/>
+</p>
 
 The addition operator takes two *operands* on either side of the sign and performs a specified action based on the type of the operands. With this, there are limitations to what can be *added*, so-to-speak, and what cannot. See the table below.<br><br>
 
