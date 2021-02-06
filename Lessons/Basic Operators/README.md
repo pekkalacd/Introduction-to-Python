@@ -108,7 +108,7 @@ This would be a scenario where *associativity* would come into play.
    **2. Each operator is on the same level of precedence**<br>
 <br>
 
-If these two conditions are met, then statements or expressions are evaluated associatively, not by precedence. The rules for associativity vary by precedence level.<br><br>
+**If these two conditions are met, then statements or expressions are evaluated associatively, not by precedence.**<br><br>
 
 <p align="center">
    <img src="https://user-images.githubusercontent.com/34849400/107112096-900ad700-681a-11eb-8180-e0544de05bb0.png"/>
