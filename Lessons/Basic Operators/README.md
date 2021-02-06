@@ -3,9 +3,24 @@
 
 To begin working with programs it's important to understand **statements** versus **expressions**. A *statement* is a line of code that does something or performs an action. An *expression* is a line of code that when evaluated results in a True or False value, otherwise known as a **boolean value**. Together statements and expressions can be tied together in order to form a basic program.<br>
 
-To begin working with the connection of statements, along with expressions, it's necessary to first understand some of the mathematical, comparison, relational, membership, and identity operators in Python.<br>
+Writing programs requires that statements, along with expressions, be connected in a logical way. In order to do so, **operators** are used. There are a multitude of operators in Python: mathematical, comparison, bitwise, relational, membership, and identity. Each of these operator umbrellas contain multiple individual operators that perform specific tasks. Each of the individual operators, adhere to rules of **precedence** and **associativity** when used in conjunction with one another.<br>
 
-Along with understanding the operators themselves, their requirements, and the resulting functionality after they've been applied, it's necessary to understand **precedence** or the order at which these operations are executed.<br>
+This section will cover the general basics of each operator group.<br>
+
+## Mathematical Operators
+<br>
+Mathematical operators, as the name implies, are responsible for performing mathematical operations on numeric data-types such as addition, subtraction, multiplication, division, floor-division, modulation, and exponentiation. Consider the table below for the Python representation of each.<br><br>
+
+| Operator |  Name  |   Type    | Purpose  |
+| -------- | ------ | --------- | -------- |
+|**+**| addition | binary | adds, concatenates, extends two operands of numeric, string, or list types, respectively |
+|**-**| subtraction | binary | subtracts two operands of numeric type and returns their difference |
+|  *  | multiplication | binary | multiplies two operands of numeric and returns their product |
+|**/**| division | binary | divides two operands of numeric type and returns their quotient as a float |
+|**//**| floor-division | binary | divides two operands of numeric type and returns their integer divsion |
+|**%** | modulus | binary | divides two operands of numeric type and returns their remainder as an integer |
+|  **  | exponential | binary | exponentiates the left numeric operand by the right numeric operand and returns the result as a float |
+<br>
 
 ### Addition Operator
 
