@@ -34,7 +34,7 @@ The requirement for two operands **does not mean** that only two literals or obj
    <img src="https://user-images.githubusercontent.com/34849400/107108718-ad7e7780-67ff-11eb-94d7-109e2bcc06aa.png"/>
 </p>
 
-<br><br>
+For more information on operator or keyword precedence, you can access information directly in the Python interpreter by typing an operator in a string and inserting it into the help function like so **``help('+')``**. <br>
 
 Precedence is what dictates which operator performs its action first, before other operators. Consider the following example, looking at the previously given statement ``12+14+13/2*9//7%4``.<br><br>
 
@@ -52,7 +52,7 @@ Precedence is what dictates which operator performs its action first, before oth
 
 ### Addition Operator
 
-Like mathematical addition, the *addition operator* functions as the addition, concatenation, and extension operator of Python's objects. It's a binary operator, meaning it requires two operands on either side of the **+** sign.<br>
+Like mathematical addition, the *addition operator* functions as the addition, concatenation, and extension operator of Python's objects. It's a binary operator, meaning it requires two operands on either side of the **+** sign, and it's commutative.<br>
 
 ```
    3+3
@@ -65,6 +65,21 @@ Like mathematical addition, the *addition operator* functions as the addition, c
  ```
 <br>
 
+There are certain data-types we can apply the addition operator to and others that we cannot.<br>
+
+| DATA-TYPES |  EXAMPLE |  STATUS |
+| ---------- | -------- | ------- |
+|  int+int   |  2 + 3   |  **OK** |
+|  int+float | 4.3 + 2  |  **OK** |
+|  float+float| 12.323+11.22 | **OK** |
+|  list+list | [1,2,3]+[2] | **OK** |
+|  str+str   | "hello "+"world!" | **OK** |
+|  
+|  int+str   | 5+"jello"|  **ERROR**|
+|  float+str | 11.111+"abc"| **ERROR**|
+|  list+int  | [1,2,3] + 4 | **ERROR**|
+|  list+float | [4]+4.2    | **ERROR**|
+|  
 The addition operator takes two *operands* on either side of the sign and performs a specified action based on the type of the operands. With this, there are limitations to what can be *added*, so-to-speak, and what cannot. See the table below.<br>
 
 | OPERATION  |  STATUS  |
