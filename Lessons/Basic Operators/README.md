@@ -9,11 +9,9 @@ This section will cover the general basics of each operator group.<br>
 
 ## Unary, Binary, and Ternary
 
-Operators require the use of *operands* in order to perform some action or evaluate an expression. An **operand** is an object or literal that is used in conjunction with an operator. When an operator requires that there is one operand, it's described as a **unary operator**. 'U' meaning one. If two operands are required, then it's a **binary operator**. 'Bi' meaning two. And in some languages, if three operands are required then the operator is **ternary**. 'Ter' meaning three.<br>
+Operators require the use of *operands* in order to perform some action or evaluate an expression. An **operand** is an object or literal that is used in conjunction with an operator. In most languages, there are three kinds of operators: *unary*, *binary*, and *ternary*. A **unary operator** requires one operand that sits to the right of the operator. A **binary operator** requires two operands which sit on either side of the operator. And a **ternary operator** requires two operands on either side and an additional one on a single side.<br>
 
-In Python, the two most common ones are binary and unary operators. Ternary operators do not exist, however, *ternary expressions* can be formed.<br> 
-
-Generally, the format of using each of these - binary and unary - operators is as follows.<br>
+In Python, there are no ternary operators. However, *ternary expressions* can still be formed. Most commonly, binary and unary operators are used. Generally, the format of using each of those is as follows.<br>
 
 ```
    # unary: {operator}(operand)
@@ -45,7 +43,9 @@ Generally, the format of using each of these - binary and unary - operators is a
  ```
 <br>
 
-In other languages, the use of '?' ternary operator might be used to form a ternary expression. A ternary expression can be used as an alternative to tradition if-else statements. The way the ternary expression evaluates is: ``{result if expression is true} if {expression} else {result if expression is false}``. Consider the sample below, where we're determining if the number 32 is even or odd and printing whether it is or isn't.<br>
+In other languages, the **?** ternary operator might be used to form ternary expressions. A ternary expression is commonly associated with if-else chains as a viable alternative. The way a ternary expression is evaluated in Python is: ``{result if expression is true} if {expression} else {result if expression is false}``.<br>
+
+Consider the sample below, where we're determining if the number 32 is even or odd and printing whether it is or isn't.<br>
 
 ```
   num = 32
@@ -67,7 +67,7 @@ In other languages, the use of '?' ternary operator might be used to form a tern
 ```
 <br>
 
-For the sake of the rest of this lesson, we will not be focusing as much on ternary expressions. Binary operators are by far the most common in Python.<br><br>
+For the sake of the rest of this lesson, we will not be focusing as much on ternary expressions, but we might come back to them as alternatives in the **if-elif-else** lesson.
 
 ## Precedence and Associativity
 
