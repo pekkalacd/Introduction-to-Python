@@ -249,10 +249,12 @@ In the scope of mathematics, subtraction can be viewed in multiple ways. It can 
 ```
 <br>
 
-The above use of the subtraction operator for numeric types is straight forward, but the usage of the operator when it comes to sets might be a surprise.<br>
+The above use of the subtraction operator for numeric types is straight forward, but the usage of the operator with sets might not be.<br>
 
-In discrete mathematics, the difference of two sets A and B is the set of elements that are contained within A that are not in B. Oppositely, the difference between a set B and
-a set A is the set of elements in B that are not in A.<br>
+In discrete mathematics, a set is an object containing distinct values where multiplicity and order do not matter. For example, the set of elements in the sequence 11111232131233123132 would only be {1,2,3} since these are the *distinct values* and *multiplicity* (or the amount of which each value occurs) is irrelevant.<br>
+
+The difference of two sets A and B is the set of elements that are contained within A that are not in B. Oppositely, the difference between a set B and
+a set A is the set of elements in B that are not in A. This difference can be computed using the subtraction operator in Python.<br>
 
 ```
    A = {1,23}
