@@ -87,8 +87,8 @@ For example, in evaluating ``2 + 3 * 5`` we'd do:<br>
 ```
 
 Much like in mathematics, operators in programming languages also abide by their own order of operations. <br><br>
-**1. The order at which statements or expressions are evaluated is dictated by *operator precedence***.<br>
-**2. If two operators with different levels of precedence are in the same statement or expression, the operator with the higher precedence will execute first.<br><br>
+  1. The order at which statements or expressions are evaluated is dictated by *operator precedence*.<br>
+  2. If two operators with different levels of precedence are in the same statement or expression, the operator with the higher precedence will execute first.<br><br>
 
 <p align="center">
    <img src="https://user-images.githubusercontent.com/34849400/107112326-6652af80-681c-11eb-89a1-accad15c0898.png"/>
