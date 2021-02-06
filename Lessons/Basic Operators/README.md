@@ -74,24 +74,15 @@ There are certain data-types we can apply the addition operator to and others th
 |  float+float| 12.323+11.22 | **OK** |
 |  list+list | [1,2,3]+[2] | **OK** |
 |  str+str   | "hello "+"world!" | **OK** |
-|  
 |  int+str   | 5+"jello"|  **ERROR**|
 |  float+str | 11.111+"abc"| **ERROR**|
 |  list+int  | [1,2,3] + 4 | **ERROR**|
 |  list+float | [4]+4.2    | **ERROR**|
-|  
-The addition operator takes two *operands* on either side of the sign and performs a specified action based on the type of the operands. With this, there are limitations to what can be *added*, so-to-speak, and what cannot. See the table below.<br>
-
-| OPERATION  |  STATUS  |
-| ----------  | -------- |
-| int+int    |   **OK** |
-| int+float  |  **OK**  |
-| int+str    |  **ERROR** |
-| int+list   | **ERROR**  |
-| float+str  | **ERROR** | 
-| set+list   | **ERROR** |
-| dict+list  | **ERROR** |
+|  set+set    | {1,2}+{3}  | **ERROR**|
+|  dict+dict  | {1:2}+{0:3} | **ERROR**|
 <br>
+
+The addition operator takes two *operands* on either side of the sign and performs a specified action based on the type of the operands. With this, there are limitations to what can be *added*, so-to-speak, and what cannot. See the table below.<br><br>
 
 For *strings*, the addition operator is the mode of ***concatenation***. Two or more strings, with each pair separated by the addition operator will be combined or concatenated
 together linearly.<br>
