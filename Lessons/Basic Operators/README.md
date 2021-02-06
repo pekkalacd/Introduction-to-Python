@@ -3,7 +3,7 @@
 
 To begin working with programs it's important to understand statements versus expressions. A *statement* is a line of code that does something or performs an action. An *expression* is a line of code that when evaluated results in a True or False value, otherwise known as *boolean* values. Together statements and expressions can be combined to form a basic program.<br>
 
-In order to connect these statements and expressions, we use **operators**. There are a multitude of operator umbrellas in Python: unary, mathematical, comparison, bitwise, relational, membership, and identity. Each of these groups contain multiple individual operators that perform specific tasks. Each of the operators, have their own *precedence* and *associativity* that is invoked when used in conjunction with other operators.<br>
+In order to connect these statements and expressions, we use **operators**. There are a multitude of operator umbrellas in Python: unary, mathematical, comparison, bitwise, relational, membership, and identity. Each of these groups contain multiple individual operators that perform specific tasks. Each of the operator groups, have their own *precedence* and *associativity* that is invoked when used in conjunction with other operators.<br>
 
 This section will cover the general basics of each operator group.<br><br>
 
