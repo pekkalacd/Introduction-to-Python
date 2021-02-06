@@ -234,7 +234,9 @@ For *Lists*, this operator serves to *extend* the left list by the right list. S
  
  ### Subtraction Operator
  
-In the scope of mathematics, subtraction can be viewed in multiple ways. It can be seen as the addition of one value x and another -c for which x and c are part of number sets that are comparable. In Python, contrary to the what the addition operator can do, the subtraction operator does not work on strings or lists. It can be used to find the difference between two numeric types or sets.<br>
+In the scope of mathematics, subtraction can be viewed in multiple ways. Generally, it's seen as the sum of a positive number and a negative number: x + y = x + (-y).<br>
+
+In Python, the subtraction functions similarly to the mathematical version. It can be used to find the difference between two numeric types or sets of elements. Unlike the addition operator,the subtraction operator **does not work on strings or lists**.<br>
 
 ```
   A = 13
@@ -268,6 +270,8 @@ a set A is the set of elements in B that are not in A. This difference can be co
 <br>
 
 Just as it was with addition, there are certain types that can be subtracted from one another and those that cannot. See the table below.<br>
+
+
 
 {continue working on this}
 
