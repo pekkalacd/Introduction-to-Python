@@ -87,7 +87,7 @@ For example, in evaluating ``2 + 3 * 5`` we'd do:<br>
 Much like in mathematics, operators in programming languages also abide by their own order of operations. <br><br>
 **The order at which statements or expressions are evaluated is dictated by *operator precedence***.<br><br>
 
-See the following [chart](https://www.programiz.com/python-programming/precedence-associativity) below for more clarification. The higher an operator is, the more precedence it has over other operators. Meaning if two or more different operators are used in the same statement, the operation whose operator has the highest precedence will happen first.<br>
+If two or more operators are in the same statement or expression, the operator with the highest precedence will execute first.<br>
 
 <p align="center">
    <img src="https://user-images.githubusercontent.com/34849400/107111709-b3805280-6817-11eb-83cd-70b341f1be9f.png"/>
