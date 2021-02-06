@@ -212,22 +212,27 @@ together linearly.<br>
 ```
 <br><br>
 
-For *Lists*, this operator serves to *extend* the left list by the right list. This can also be accomplished by using the ```list.extend(list_object)``` member-function or method of the builtin List class.<br>
+For *Lists*, this operator serves to *extend* the left list by the right list, but the changes do not persist. That is, the addition operator *returns* the extension of the left
+list by the right list, but it does not maintain those changes in the left list. On the otherhand, methods like .extend() available to list types in Python *do modify* the list that the method is called upon.<br>
 
 ```
+   # using .extend() we'll modify List1 from [1,2,3] to [1,2,3,4,5,6]
    List1 = [1,2,3]
    List2 = [4,5,6]
    List1.extend(List2)
+   List1
    # output => [1,2,3,4,5,6]
    
-   List2.extend(List1)
-   # output => [4,5,6,1,2,3]
-   
-   List1 + List2
+   # using + operator, we'll extend a list [1,2,3] by [4,5,6] to [1,2,3,4,5,6] and store it in List3
+   List3 = []
+   List3 = [1,2,3] + List2
+   List3
    # output => [1,2,3,4,5,6]
    
-   List2 + List1
-   # output => [4,5,6,1,2,3]
+   # we'll compare List3 and List1 to see if they are the same
+   List3 == List1
+   # output => True
+   
  ```
  <br>
 
