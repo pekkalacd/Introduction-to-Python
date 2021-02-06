@@ -22,7 +22,7 @@ Mathematical operators, as the name implies, are responsible for performing math
 |  **  | exponential | binary | exponentiates the left numeric operand by the right numeric operand and returns the result as a float |
 <br>
 
-You'll notice in the column labeled *Type* that each of these operators are **binary**. This is not referring to binary in the sense of 1's and 0's, but rather to the requirement of needing **2 operands** in order to function. An **operand** is an object or literal that is used in conjunction with an operator for a specific action to be done.
+You'll notice in the column labeled *Type* that each of these operators are **binary**. This is not referring to binary in the sense of 1's and 0's, but rather to the requirement of needing two operands in order to function. An **operand** is an object or literal that is used in conjunction with an operator for a specific action to be done.
 For example, in the statement ``2 + 3``, notice the addition operator **+** is surrounded by two integer-literals '2' and '3'. These are *operands*.<br>
 
 ### Precedence
