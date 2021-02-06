@@ -5,7 +5,7 @@ To begin working with programs it's important to understand statements versus ex
 
 In order to connect these statements and expressions, we use **operators**. There are a multitude of operator umbrellas in Python: unary, mathematical, comparison, bitwise, relational, membership, and identity. Each of these groups contain multiple individual operators that perform specific tasks. Each of the operators, have their own *precedence* and *associativity* that is invoked when used in conjunction with other operators.<br>
 
-This section will cover the general basics of each operator group.<br>
+This section will cover the general basics of each operator group.<br><br>
 
 ### Unary, Binary, and Ternary
 
@@ -70,7 +70,7 @@ Consider the sample below, where we're determining if the number 32 is even or o
 ```
 <br>
 
-For the sake of the rest of this lesson, we will not be focusing as much on ternary expressions, but we might come back to them as alternatives in the if-elif-else lesson.
+For the sake of the rest of this lesson, we will not be focusing as much on ternary expressions, but we might come back to them as alternatives in the if-elif-else lesson.<br>
 
 ### Precedence
 
@@ -115,6 +115,7 @@ If these two conditions are met, then statements or expressions are evaluated in
    <img src="https://user-images.githubusercontent.com/34849400/107112096-900ad700-681a-11eb-8180-e0544de05bb0.png"/>
 </p>
 
+<br><br>
 
 #### Associativity in Action
 
