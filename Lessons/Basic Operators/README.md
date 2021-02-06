@@ -1,11 +1,107 @@
 # Basic Operators
 <br>
 
-To begin working with programs it's important to understand **statements** versus **expressions**. A *statement* is a line of code that does something or performs an action. An *expression* is a line of code that when evaluated results in a True or False value, otherwise known as a **boolean value**. Together statements and expressions can be tied together in order to form a basic program.<br>
+To begin working with programs it's important to understand statements versus expressions. A *statement* is a line of code that does something or performs an action. An *expression* is a line of code that when evaluated results in a True or False value, otherwise known as *boolean* values. Together statements and expressions can be combined to form a basic program.<br>
 
-Writing programs requires that statements, along with expressions, be connected in a logical way. In order to do so, **operators** are used. There are a multitude of operators in Python: mathematical, comparison, bitwise, relational, membership, and identity. Each of these operator umbrellas contain multiple individual operators that perform specific tasks. Each of the individual operators, adhere to rules of **precedence** and **associativity** when used in conjunction with one another.<br>
+In order to do so, however, **operators** are used. There are a multitude of operator umbrellas in Python: mathematical, comparison, bitwise, relational, membership, and identity. Each of these groups contain multiple individual operators that perform specific tasks. Each of the individual operators, adhere to rules of **precedence** and **associativity** when used in conjunction with one another.<br>
 
 This section will cover the general basics of each operator group.<br>
+
+## Unary, Binary, and Ternary
+
+Operators require the use of *operands* in order to perform some action or evaluate an expression. An **operand** is an object or literal that is used in conjunction with an operator. When an operator requires that there is one operand, it's described as a **unary operator**. 'U' meaning one. If two operands are required, then it's a **binary operator**. 'Bi' meaning two. And in some languages, if three operands are required then the operator is **ternary**. 'Ter' meaning three.<br>
+
+In Python, the two most common ones are binary and unary operators. Ternary operators do not exist, however, *ternary expressions* can be formed.<br> 
+
+Generally, the format of using each of these - binary and unary - operators is as follows.<br>
+
+```
+   # unary: {operator}(operand)
+   # examples:
+           ~12
+           # output => -13    (~ is unary 'invert' operator: ~x = -(x+1))
+          
+           -123
+           # output => -123   (- is unary minus: -x = 'negative' x)
+           
+           +123
+           # output => 123    (+ is unary plus: +x = x)
+   
+   
+   # binary: (operand) {operator} (operand)
+   # examples:
+          
+          2 + 3
+          # output => 5       (+ is addition operator)
+          
+          2 - 3
+          # output => -1      (- is subtraction operator)
+          
+          True and False
+          # output => False   ('and' is logical AND operator)
+          
+          1 << 2
+          # output => 4       (<< is left-shift:  x << y = x(2^y) )
+ ```
+<br>
+
+In other languages, the use of '?' ternary operator might be used to form a ternary expression. A ternary expression can be used as an alternative to tradition if-else statements. The way the ternary expression evaluates is: ``{result if expression is true} if {expression} else {result if expression is false}``. Consider the sample below, where we're determining if the number 32 is even or odd and printing whether it is or isn't.<br>
+
+```
+  num = 32
+  
+   # normal if-else
+  if num % 2 == 1:
+         print(f"{num} is odd!")
+  else:
+         print(f"{num} is even!")
+         
+  # output => 32 is even!
+ 
+ 
+  # ternary if-else
+  print(f"{num} is odd!" if num % 2 == 1 else f"{num} is even!")
+  
+  # output => 32 is even!
+
+```
+<br>
+
+For the sake of the rest of this lesson, we will not be focusing as much on ternary expressions. Binary operators are by far the most common in Python.<br><br>
+
+## Precedence and Associativity
+
+Before we get started into the specific operator umbrellas, consider the subheading. The *precedence* of an operator determines when that operation will be applied. When programmers talk about precedence, they are usually referring to the use of multiple types of operators in a specific statement.<br>
+
+For example, in mathematics, if we wanted to evaluate ```2 + 3 * 5``` we might refer to **PEMDAS** which is the acronym for the *order of operations*; that is, **P**arentheses, **E**xponents, **M**ultiplication, **A**ddition, and **S**ubtraction. The earlier an operation resides in the acryonym, PEMDAS, the more *precedence* that operation has over the others.<br>
+
+For example, in evaluating ``2 + 3 * 5`` since multiplication comes before addition we do ``3 * 5`` first in order to get ``2 + 15``, then evaluate the addition as ``17``.<br>
+
+Much like mathematics, operators in programming languages also abide by their own order of operations. **The order at which statements or expressions are evaluated is dictated by *operator precedence***.<br>
+
+See the following [chart](https://www.programiz.com/python-programming/precedence-associativity) below for more clarification. The higher an operator is, the more precedence it has over other operators. Meaning if two or more different operators are used in the same statement, the operation whose operator has the highest precedence will happen first.<br>
+
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/34849400/107108718-ad7e7780-67ff-11eb-94d7-109e2bcc06aa.png"/>
+</p>
+
+For more information on operator or keyword precedence, you can access information directly in the Python interpreter by typing an operator in a string and inserting it into the help function like so **``help('+')``**. <br>
+
+Now, consider the following example which evaluates ``12+14+13/2*9//7%4``. This statement uses multiple operators. So, we must refer to precedence when evaluating.<br><br>
+
+```
+  12+14+13/(2*9)//7%4              # happens 1st, since * has the highest precedence
+  12+14+(13/18)//7%4               # happens 2nd, since / has the next highest precedence 
+  12+14+(0.7222222222222222//7)%4  # happens 3rd, since // has the next highest precedence
+  12+14+(0%4)                      # happens 4th, since % has the next highest precedence
+  (12+14)+0                        # happens 5th, since + and + are same, left-to-right associativity kicks in
+  26+0                             # happens last, since there's only 1 + left, this is evaluated
+  
+  # output => 26
+```
+<br>
+
+Along with the concept of operator precedence is **associativity**. 
 
 ## Mathematical Operators
 <br>
@@ -22,33 +118,7 @@ Mathematical operators, as the name implies, are responsible for performing math
 |  **  | exponential | binary | exponentiates the left numeric operand by the right numeric operand and returns the result as a float |
 <br>
 
-You'll notice in the column labeled *Type* that each of these operators are **binary**. This is not referring to binary in the sense of 1's and 0's, but rather to the requirement of needing two operands in order to function. An **operand** is an object or literal that is used in conjunction with an operator for a specific action to be done.
-For example, in the statement ``2 + 3``, notice the addition operator **+** is surrounded by two integer-literals '2' and '3'. These are *operands*.<br>
-
-### Precedence
-
-The requirement for two operands **does not mean** that only two literals or objects can be operated upon at a time. More complex statements such as ``12+14+13/2*9//7%4`` can also be evaluated. Because statements like this *share* operands with other operators acting on those same operands, this is where **operator precedence** would need to be considered.<br><br>
-**The higher the operator on this [chart](https://www.programiz.com/python-programming/precedence-associativity), the more *precedence* it takes over other operators if used in the same statement.**<br><br>
-
-<p align="center">
-   <img src="https://user-images.githubusercontent.com/34849400/107108718-ad7e7780-67ff-11eb-94d7-109e2bcc06aa.png"/>
-</p>
-
-For more information on operator or keyword precedence, you can access information directly in the Python interpreter by typing an operator in a string and inserting it into the help function like so **``help('+')``**. <br>
-
-Precedence is what dictates which operator performs its action first, before other operators. Consider the following example, looking at the previously given statement ``12+14+13/2*9//7%4``.<br><br>
-
-```
-  12+14+13/(2*9)//7%4              # happens 1st, since * has the highest precedence
-  12+14+(13/18)//7%4               # happens 2nd, since / has the next highest precedence 
-  12+14+(0.7222222222222222//7)%4  # happens 3rd, since // has the next highest precedence
-  12+14+(0%4)                      # happens 4th, since % has the next highest precedence
-  (12+14)+0                        # happens 5th, since + and + are same, left-to-right associativity kicks in
-  26+0                             # happens last, since there's only 1 + left, this is evaluated
-  
-  # output => 26
-```
-<br>
+You'll notice in the column labeled *Type* that each of these operators are **binary**. This is not referring to binary in the sense of 1's and 0's, but rather to the requirement of needing two operands in order to function.<br>
 
 ### Addition Operator
 
