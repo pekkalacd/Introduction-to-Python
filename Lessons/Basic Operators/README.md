@@ -119,7 +119,7 @@ If these two conditions are met, then statements or expressions are evaluated in
 #### Associativity in Action
 
 ```
-   We want to evaluate 12+14+(13/2)*9//70%16
+   We want to evaluate 50//10*32/31*8//4.  Notice all *, /, // are multiplicative operators and have the same precedence level and share an operands with each other.
    
    
    (50//10)*32/31*8//4        # all //, *, / have same precedence and share operand 10, left-to-right associativity
