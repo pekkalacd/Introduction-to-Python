@@ -9,7 +9,9 @@ This section will cover the general basics of each operator group.<br>
 
 ### Unary, Binary, and Ternary
 
-Operators require the use of *operands* in order to perform some action or evaluate an expression. An **operand** is an object or literal that is used in conjunction with an operator. In most languages, there are three kinds of operators: *unary*, *binary*, and *ternary*. A **unary operator** requires one operand that sits to the right of the operator. A **binary operator** requires two operands which sit on either side of the operator. And a **ternary operator** requires two operands on either side and an additional one on a single side.<br>
+Operators require the use of *operands* in order to perform some action or evaluate an expression. An **operand** is an object or literal that is used in conjunction with an operator. In most languages, there are three kinds of operators: *unary*, *binary*, and *ternary*.<br>
+
+A **unary operator** requires one operand that sits to the right of the operator. A **binary operator** requires two operands which sit on either side of the operator. And a **ternary operator** requires two operands on either side and an additional one on a single side.<br>
 
 In Python, there are no ternary operators. However, *ternary expressions* can still be formed. Most commonly, binary and unary operators are used. Generally, the format of using each of those is as follows.<br>
 
