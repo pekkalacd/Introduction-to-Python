@@ -240,6 +240,11 @@ Scraping data from websites. Parsing using beautifulSoup.<br>
   - Resources:
 <br><br>
 
+[**Machine Learning**](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/machine-learning)<br>
+Machine learning techniques. Numpy, pandas, {add more}. 
+  - Resources:
+<br><br>
+
 
 
 
