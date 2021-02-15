@@ -26,7 +26,7 @@ On your overview page, inside of your forked copy of this repository, navigate t
 
 Navigate to git bash terminal and make a directory and change directories into it:<br><br>
 
-                                 mkdir someFolder && cd someFolder
+                                 mkdir someFolder ; cd someFolder
 <br>
 
 This directory will be used to store a **clone** or copy of this repository on your local machine. You can clone with the following command:<br><br>
