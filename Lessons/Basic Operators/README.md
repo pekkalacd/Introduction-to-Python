@@ -196,7 +196,7 @@ There are certain data-types we can apply the addition operator to and others th
    <img src="https://user-images.githubusercontent.com/34849400/107110273-369bab80-680c-11eb-84d7-75428794ccc4.png"/>
 </p>
 
-While numeric types are generally in the clear when using the addition operator, there are some combinations of operand types that cannot be added. See the table below.<br><br>
+While numeric types are generally in the clear when using the addition operator, there are some combinations of operand types that cannot be added. See the table above.<br><br>
 
 For *strings*, the addition operator is the mode of ***concatenation***. Two or more strings, with each pair separated by the addition operator will be combined or concatenated
 together linearly.<br>
@@ -271,9 +271,86 @@ a set A is the set of elements in B that are not in A. This difference can be co
 
 Just as it was with addition, there are certain types that can be subtracted from one another and those that cannot. See the table below.<br>
 
+<p align = "center">
+   <img src = "https://user-images.githubusercontent.com/34849400/108668207-600d3600-74a0-11eb-8f4b-fcfe95c9c516.png"/>
+</p>
 
+**note: || is 'or'**<br>
 
-{continue working on this}
+<br><br>
+
+ ### Multiplication Operator <br>
+ 
+ The multiplication operator, much like mathematical multiplication, generally, returns the product of two numerical operands. However, unlike mathematical multiplication,
+ this operator ***can be used in combination with numeric and non-numeric types***. The multiplication operator is marked by ``*`` and is a binary operator requiring two operands. <br>
+ 
+ Generally, the syntax is as follows:<br>
+ 
+ ```
+    {type} * {type}
+    
+    # for numeric-types
+    32 * 2
+    32.4 * 2
+
+    # output => 64
+                64.8 
+    
+    # for numeric & non-numeric
+    3 * "abc" 
+    2 * [1,2,3]
+    
+    # output => "abcabcabc"
+                [1,2,3,1,2,3]
+   
+```
+<br>
+
+Part of the 'magic' of this operator lies in mathematics. Multiplication is the subsequent addition of traditionally numeric types a certain number of times. So, for a list like [1,2,3] that is multiplied by 2, we're adding together the lists [1,2,3] + [1,2,3], and by addition operator rules, under extension, [1,2,3,1,2,3] is returned. Likewise, for another *iterable* such as a string like "abc", 3 * "abc" is "abc" + "abc" + "abc" and by addition operator rules, under concatenation, "abcabcabc" is returned.<br>
+
+Much like the other mathematical operators, there are some operand-types which cannot be multiplied together.<br>
+
+<p align = "center">
+   <img src = "https://user-images.githubusercontent.com/34849400/108669507-cb580780-74a2-11eb-963d-c634f8bb0d78.png"/>
+</p>
+
+<br><br>
+
+### Division Operator
+
+In Python, the division operator is marked by a single backslash ``/``. This operator is binary and **returns a float type** when used. It is constrained to the same constraints as mathematics in that, you cannot divide by zero, nor by some structure that is non-numeric. And likewise, the numerator cannot be a non-numeric structure. Unlike the multiplication operator, division cannot be broken up into the subsequent sum of partial elements.<br>
+
+Syntax for using the division operator is as followed.<br>
+
+```
+    {type} / {type} -> float
+    
+    # using integers
+    2 / 2
+    
+    # output => 1.0
+    
+    # using floats
+    
+    2.0 / 2.0
+    
+    # output => 1.0
+    
+    # using integers and floats
+    
+    2 / 3.0
+    
+    output => 0.6666666666666666
+
+```
+<br>
+
+Other languages like C/C++ have a default *precision* value for how many decimal places a number will be displayed to, in Python, the default precision value is **about 15 digits after the decimal**.<br>
+
+There are some types that may not be divided by each other. Below is a table describing them.<br>
+
+{ continue working on this } 
+
 
 
 
