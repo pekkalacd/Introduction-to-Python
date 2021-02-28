@@ -71,6 +71,72 @@ Consider the sample below, where we're determining if the number 32 is even or o
 <br>
 
 For the sake of the rest of this lesson, we will not be focusing as much on ternary expressions, but we might come back to them as alternatives in the if-elif-else lesson.<br>
+<br>
+### Assignment Operator
+
+You've seen this operator used many times already. The assignment operator **=** is a binary operator used to assign a value to the right of it to the memory location on the left. In an earlier lesson, when discussing [Variables](https://github.com/pekkalacd/Introduction-to-Python/tree/master/Lessons/Variables), a variable was stated to be a named storage location. It is a space in memory which contains **an address and a value**. The address is *where* that object is in RAM and the value is *what* that space holds.<br>
+
+```
+   {object} = {value}
+   
+   dog = "sparky"
+   # dog is a variable, it's the object
+   # "sparky" is a string and it's the value stored in the variable 'dog'
+   
+   # displaying address of 'dog'
+   print(hex(id(dog)))
+   
+   # displaying value inside 'dog' ~ "sparky"
+   print(dog)
+   
+   # output =>  0x252f8ef2af0
+                sparky
+```
+<br>
+
+The object to the left of the assignment operator **must have a location**. This is because the assignment operator does 3 things.<br><br>
+**Steps of the assignment operator:**<br>
+   **1. Reduces the right value to a single type**<br>
+   **2. Assigns the right value to the left object's location in memory**<br>
+   **3. Returns the left object**<br>
+<br><br>
+If the left object does not have a space in memory for Python to refer to, using the assignment operator will not work. 
+<br><br>
+
+```
+   2 = 2
+   # output => SyntaxError: cannot assign to literal
+   
+   "person" = "fun"
+   # output => SyntaxError: cannot assign to literal
+   
+   [1,2,3] = [1,2]
+   # output => SyntaxError: cannot assign to literal 
+```
+<br>
+
+When working with structures such as lists these lines can be *blurred* easy, but the principle is the same. A list contains a collection of memory locations. Each index of a list has it's own unique memory address. So, when assigning values to a specific index of a list, this is seen as equivalent as assigning a value to a space in memory.<br>
+
+```
+   dog = ["sparky","bones","fred"]
+   dog[-1] = "toby"
+   print(dog)
+   # output => ["sparky","bones","toby"]
+```
+<br>
+
+If we try to do similar for strings, we'll come across a **TypeError** since strings are *immutable*.<br>
+
+```
+   dog = "moby"
+   dog[0] = "t"
+   # output => TypeError: 'str' object does not support item assignment
+```
+<br>
+
+We'll continue using the assignment operator throughout the rest of this lesson and other lessons moving forward, so if there was one operator to completely familiarize with, it'd be this one.
+
+<br>
 
 ### Precedence
 
@@ -253,7 +319,7 @@ In Python, the subtraction functions similarly to the mathematical version. It c
 
 The above use of the subtraction operator for numeric types is straight forward, but the usage of the operator with sets might not be.<br>
 
-In discrete mathematics, a set is an object containing distinct values where multiplicity and order do not matter. For example, the set of elements in the sequence 11111232131233123132 would only be {1,2,3} since these are the *distinct values* and *multiplicity* (or the amount of which each value occurs) is irrelevant.<br>
+In discrete mathematics, a set is an object containing distinct values where multiplicity and order do not matter. For example, the set of elements in the sequence 11111232131233123132 would only be {1,2,3} since these are the *distinct values* and *multiplicity* (or the amount of which each value occurs) is irrelevant, and since order doesn't matter the set {1,2,3} would be the same as {2,3,1} or {3,2,1} and so on.<br>
 
 The difference of two sets A and B is the set of elements that are contained within A that are not in B. Oppositely, the difference between a set B and
 a set A is the set of elements in B that are not in A. This difference can be computed using the subtraction operator in Python.<br>
@@ -269,7 +335,7 @@ a set A is the set of elements in B that are not in A. This difference can be co
 ```
 <br>
 
-Just as it was with addition, there are certain types that can be subtracted from one another and those that cannot. See the table below.<br>
+Just as it was with addition, there are certain types that can be subtracted from one another and those that cannot.<br>
 
 <p align = "center">
    <img src = "https://user-images.githubusercontent.com/34849400/108668207-600d3600-74a0-11eb-8f4b-fcfe95c9c516.png"/>
@@ -345,11 +411,78 @@ Syntax for using the division operator is as followed.<br>
 ```
 <br>
 
-Other languages like C/C++ have a default *precision* value for how many decimal places a number will be displayed to, in Python, the default precision value is **about 15 digits after the decimal**.<br>
+Other languages like C/C++ have a default *precision* value for how many decimal places a number will be displayed to, in Python, the default precision value is **about 15 digits after the decimal** or *double precision*.<br>
 
 There are some types that may not be divided by each other. Below is a table describing them.<br>
 
-{ continue working on this } 
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/34849400/109402753-2021d500-791e-11eb-84a2-11ce416f5099.png"/>
+</p>
+<br>
+
+A point of interest, as we'll discuss shortly, is what Python does with **boolean** values that are used in conjunction with mathematical operators. A **True** value is evaluated as the integer 1 and a **False** value is treated as the integer 0. When dividing, we cannot divide by 0, as this will trigger a **ZeroDivisionError** in Python. But using this knowledge, we can do some weird calculations as well.<br>
+
+```
+   (2 + True)/(True + 3*False)
+   # (2 + 1) / (1 + 3*0)
+   # (3) / (1)
+   # output => 3.0
+```
+<br><br>
+
+### Floor-Division Operator
+
+Similar to the division operator, the floor-division operator marked by **//** is a binary operator which divides a left-value by the right-value. Differently, this operator returns an **integer** that is equal to or less than the normal quotient of the left and right values.<br>
+
+In mathematics, a **floor** function, written **floor(x)**, takes a real number **x** and returns the greatest integer that is less than or equal to x. In Python, using the math library, we can access this same functionality.<br>
+
+```
+   from math import floor
+   x = 3.4
+   floor(x)
+   # output => 3 
+   
+   y = 5.9
+   floor(y)
+   # output => 5
+```
+<br>
+
+The floor function *truncates* the floating point or decimal portion of the input that is put in and returns just the integer portion. This can also be achieved by **casting** or converting the input to an integer using **int(x)**.<br>
+
+Similarly, **floor-division** does the same thing. Consider, the following.<br>
+
+```
+    x = 2
+    y = 3
+    x/y
+    # output => 0.66666666666666666
+    
+    int(x/y)
+    # output => 0
+    
+    floor(x/y)
+    # output => 0
+    
+    x // y
+    # output => 0
+```
+<br>
+
+So, **//** takes care of the truncation of the decimal portion of the quotient without needing to use an external library or casting the quotient to an integer.<br>
+
+As all operators before it, there are some types that cannot be used with one another separated by **//**.<br>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
